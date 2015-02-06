@@ -68,3 +68,4 @@ site
 # hide the AWS and Rsync credentials file
 aws-credentials.json
 rsync-credentials.json
+Gemfile.lock
