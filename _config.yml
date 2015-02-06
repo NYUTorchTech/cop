@@ -3,7 +3,8 @@
 title: NYU Communities of Practice
 description: Bringing people together
 tagline: Bringing people together
-url: localhost:4000
+email: your-email@domain.com
+url: //localhost:3000
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
@@ -14,8 +15,8 @@ destination: serve
 author:
   name: NYU CoP Committee
   email: jannae@nyu.edu
-  bio: 
-  twitter: 
+  bio:
+  twitter:
 
 # general setting for Jekyll
 googleAnalytics: UA-XXXXX-X
@@ -29,17 +30,63 @@ lsi: false
 # Only make the last 10 posts so generating isn't slow
 limit_posts: 10
 
-# Permalink structure and pagination options
-relative_permalinks: true
-permalink: none
-paginate: all
-paginate_path: 'page:num'
-excerpt_separator: '<!--more-->'
+sass:
+  sass_dir: _sass
+  style: compressed
 
-# Markdown library
-markdown: redcarpet
-# Markdown library options
-redcarpet:
-  extensions: ['no_intra_emphasis', 'tables', 'fenced_code_blocks', 'autolink', 'smart',
-              'strikethrough', 'superscript', 'underline', 'highlight', 'footnotes']
-highlighter: true
+# Team names, titles and social links
+people:
+- name: Kay Garland
+  pic: 1
+  position: Lead Designer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: stack-overflow
+      url: #
+
+- name: Larry Parker
+  pic: 2
+  position: Lead Marketer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: linkedin
+      url: #
+
+- name: Diana Petersen
+  pic: 3
+  position: Lead Developer
+  social:
+    - title: twitter
+      url: #
+    - title: facebook
+      url: #
+    - title: google-plus
+      url: #
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: http://twitter.com/jekyllrb
+  - title: facebook
+    url:
+  - title: stack-overflow
+    url: http://stackoverflow.com/questions/tagged/jekyll
+  - title: bitbucket
+    url: http://bitbucket.org/jekyll
+  - title: github
+    url: http://github.com/jekyll
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
+# Build settings
+markdown: kramdown
+permalink: pretty

@@ -1,0 +1,23 @@
+// SASS VARIABLES
+// --------------------------------------------------
+
+// Typography variables
+$base-font          : "Helvetica Neue", Helvetica, Arial, sans-serif;
+$body-font          : "Roboto Slab", $base-font;
+$accent-font        : Montserrat, $base-font;
+$navbar-font        : "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+$header-font        : "Droid Serif", $base-font;
+
+
+// Color variables
+$primary            : #57068C;
+$accent             : #8900e1;
+$secondary          : #330662;
+$secondary-dark     : #333;
+
+// Images
+$imgdir             : '../img/';
+$headerback         : $imgdir + 'header-bg.jpg';
+$contactback        : $imgdir + 'map-image.png';
+$logo               : $imgdir + 'logo.png'
+
