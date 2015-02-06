@@ -16,12 +16,28 @@
   ],
   "dependencies": {
     "font-awesome": "~4.3.0",
-    "jquery": "~2.1.3",
-    "bootstrap": "~3.3.2",
+    "jquery": "~1.11.0",
+    "bootstrap": "~3.2.0",
     "jquery-easing": "*",
     "classie": "~1.0.1",
     "AnimatedHeader": "git://github.com/codrops/AnimatedHeader.git",
-    "jqBootstrapValidation": "~1.3.7",
-    "bootswatch": "~3.3.2"
+    "jqBootstrapValidation": "~1.3.7"
+  },
+  "overrides": {
+    "AnimatedHeader": {
+      "main": [
+        "js/cbpAnimatedHeader.js"
+      ]
+    },
+    "jquery-easing": {
+      "main": [
+        "jquery.easing.js"
+      ]
+    },
+    "bootstrap": {
+      "main": [
+        "js/bootstrap.js"
+      ]
+    }
   }
 }
