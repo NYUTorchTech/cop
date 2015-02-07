@@ -1,22 +1,23 @@
 ---
-title: Social Media Ambassadors
-subtitle: Subtitle?
+title: Javascript Developers
+subtitle: Short description
 layout: default
-date: 2015-01-10
+date: 2015-01-11
 image:
-  main: social-ambassadors.jpg
-  mainalt: Social Media Ambassadors
-  thumb: social-ambassadors.jpg
-  thumbalt: Social Media Ambassadors
+  main: javascript-group.png
+  mainalt: Javascript Developers Group
+  thumb: javascript-group.png
+  thumbalt: Javascript Developers Group
 organized-date: April 2011
 organizers:
-- name: Chris Barrows
-  contact: <a href="mailto:chris@mail.com">mail works</a>
+- name: John Snow
+  contact:
   isPrimary: true
 - name: Someone Else
   contact:
   isPrimary: false
-category: Social Media
+category: Javascript
+tags: []
 ---
 
 Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.

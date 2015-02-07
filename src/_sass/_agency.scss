@@ -341,19 +341,19 @@ section h3.section-subheading {
     text-transform: none;
 }
 
-#modals .modals-item {
+.modals .modals-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#modals .modals-item .modals-link {
+.modals .modals-item .modals-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#modals .modals-item .modals-link .modals-hover {
+.modals .modals-item .modals-link .modals-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -365,11 +365,11 @@ section h3.section-subheading {
     background: rgba($primary, .9);
 }
 
-#modals .modals-item .modals-link .modals-hover:hover {
+.modals .modals-item .modals-link .modals-hover:hover {
     opacity: 1;
 }
 
-#modals .modals-item .modals-link .modals-hover .modals-hover-content {
+.modals .modals-item .modals-link .modals-hover .modals-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -380,16 +380,16 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#modals .modals-item .modals-link .modals-hover .modals-hover-content i {
+.modals .modals-item .modals-link .modals-hover .modals-hover-content i {
     margin-top: -12px;
 }
 
-#modals .modals-item .modals-link .modals-hover .modals-hover-content h3,
-#modals .modals-item .modals-link .modals-hover .modals-hover-content h4 {
+.modals .modals-item .modals-link .modals-hover .modals-hover-content h3,
+.modals .modals-item .modals-link .modals-hover .modals-hover-content h4 {
     margin: 0;
 }
 
-#modals .modals-item .modals-caption {
+.modals .modals-item .modals-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -397,24 +397,24 @@ section h3.section-subheading {
     background-color: #fff;
 }
 
-#modals .modals-item .modals-caption h4 {
+.modals .modals-item .modals-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#modals .modals-item .modals-caption p {
+.modals .modals-item .modals-caption p {
     margin: 0;
     font-family: $header-font;
     font-size: 16px;
     font-style: italic;
 }
 
-#modals * {
+.modals * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #modals .modals-item {
+    .modals .modals-item {
         margin: 0 0 30px;
     }
 }

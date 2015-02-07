@@ -1,6 +1,6 @@
  <!-- modals Modals -->
  {% for post in site.posts %}
-    <div class="modals-modal modal fade" id="modalsModal{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modals-modal modal fade" id="{{ post.title | slugify }}" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -14,19 +14,25 @@
                         <div class="modal-body">
                             <h2>{{ post.title }}</h2>
                             <hr class="star-primary">
-                            <img src="assets/img/modals/{{ post.img }}" class="img-responsive img-centered" alt="{{ post.alt }}">
+                            {% if post.image.main %}
+                                {% picture main {{ post.image.main }} class="img-responsive img-centered" alt="{{ post.image.mainalt }}" %}
+                            {% endif %}
                             <p>{{ post.content }}</p>
+                            {% for organizer in post.organizers %}
                             <ul class="list-inline item-details">
+                                {% if organizer.isPrimary %}
+                                <li><strong>Primary:</strong></li>
+                                {% else %}
+                                <li>&nbsp;</li>
+                                {% endif %}
                                 <li>Community Organizer:
-                                    <strong>{{ post.organizer }}</strong>
+                                    <strong>{{ organizer.name }}</strong>
                                 </li>
-                                <li>Date:
-                                    <strong>{{ post.project-date }}</strong>
-                                </li>
-                                <li>Service:
-                                    <strong>{{ post.category }}</strong>
+                                <li>Contact:
+                                    <strong>{{ organizer.contact }}</strong>
                                 </li>
                             </ul>
+                            {% endfor %}
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
                     </div>

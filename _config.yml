@@ -5,6 +5,7 @@ description: Bringing people together
 tagline: Bringing people together
 email: your-email@domain.com
 url: //localhost:3000
+thumb: roundicons-thumbnail.png
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
@@ -37,3 +38,23 @@ sass:
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# Jekyll Picture Tag Plugin Config
+picture:
+  source: _img-orig
+  output: assets/img/modals
+  markup: picture
+  presets:
+    main:
+      attr:
+        alt: 'main image'
+        itemprop: 'image'
+      source_default:
+        width: 600
+    thumb:
+      attr:
+        alt: 'thumbnail'
+        itemprop: 'image'
+      source_default:
+        width: 400
+        height: 289
