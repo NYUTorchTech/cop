@@ -41,7 +41,7 @@ gulp.task("clean:prod", del.bind(null, [path.deploy]));
 // This will build the site with the production settings
 gulp.task("jekyll:dev", $.shell.task("jekyll build"));
 
-gulp.task("jekyll-rebuild", ["inject"], function () {
+gulp.task("jekyll-rebuild", function () {
   reload;
 });
 
@@ -181,7 +181,7 @@ gulp.task("serve:dev", ["clean:dev", "inject"], function () {
 // These tasks will look for files that change while serving and will auto-regenerate or
 // reload the website accordingly. Update or add other files you need to be watched.
 gulp.task("watch", function () {
-  gulp.watch([path.src + '/**/*.md', path.src + '/**/*.html', path.src + '/**/*.xml', path.src + '/**/*.txt', path.src + '/**/*.js', path.src + '/**/*.scss'], ['jekyll-rebuild']);
+  gulp.watch([path.src + '/**/*.md', path.src + '/**/*.html', path.src + '/**/*.xml', path.src + '/**/*.txt', path.src + '/**/*.js', path.src + '/**/*.scss'], ['jekyll-rebuild', 'inject']);
   gulp.watch([path.build + '/' + path.css + '/*.css'], reload);
 });
 
