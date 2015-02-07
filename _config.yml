@@ -35,57 +35,88 @@ sass:
   # style: compressed
 
 # Team names, titles and social links
-people:
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+team:
+  heading: CoP Operating Committee
+  subheading: We put this together!
+  subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+  people:
+    - name: Neyla Zonis
+      pic: 1
+      position: Committee Chair
+      social:
+        - title: twitter
+          url: #
+        - title: facebook
+          url: #
+        - title: stack-overflow
+          url: #
 
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
+    - name: Larry Parker
+      pic: 2
+      position: Lead Marketer
+      social:
+        - title: twitter
+          url: #
+        - title: facebook
+          url: #
+        - title: linkedin
+          url: #
 
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+    - name: Diana Petersen
+      pic: 3
+      position: Lead Developer
+      social:
+        - title: twitter
+          url: #
+        - title: facebook
+          url: #
+        - title: google-plus
+          url: #
+
+modals:
+  heading: "Join a Community"
+  subheading: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+
+actionitems:
+  heading: "Get Involved"
+  subheading: "Action Items Subheading"
+  anchor: actionitems
+  sections:
+    - title: "Join a Community"
+      icon: group
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      link: '#join'
+    - title: "Start a Community"
+      icon: thumbs-up
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      link: '#'
+    - title: "Find a Resource"
+      icon: question
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      link: '#'
+    - title: "Connect with Others"
+      icon: comment
+      text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+      link: '#'
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter
-    url: http://twitter.com/jekyllrb
+    url: '#'
   - title: facebook
-    url:
+    url: '#'
   - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
+    url: '#'
   - title: bitbucket
-    url: http://bitbucket.org/jekyll
+    url: '#'
   - title: github
-    url: http://github.com/jekyll
+    url: '#'
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - line: New York University, ITS
+  - line: 10 Astor Pl
+  - line: New York, NY 10003
 
 # Build settings
 markdown: kramdown

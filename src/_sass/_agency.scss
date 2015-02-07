@@ -336,24 +336,24 @@ section h3.section-subheading {
     }
 }
 
-.service-heading {
+.actionitem-heading {
     margin: 15px 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item {
+#modals .modals-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#modals .modals-item .modals-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#modals .modals-item .modals-link .modals-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -365,11 +365,11 @@ section h3.section-subheading {
     background: rgba($primary, .9);
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#modals .modals-item .modals-link .modals-hover:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#modals .modals-item .modals-link .modals-hover .modals-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -380,16 +380,16 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#modals .modals-item .modals-link .modals-hover .modals-hover-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#modals .modals-item .modals-link .modals-hover .modals-hover-content h3,
+#modals .modals-item .modals-link .modals-hover .modals-hover-content h4 {
     margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+#modals .modals-item .modals-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -397,24 +397,24 @@ section h3.section-subheading {
     background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+#modals .modals-item .modals-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+#modals .modals-item .modals-caption p {
     margin: 0;
     font-family: $header-font;
     font-size: 16px;
     font-style: italic;
 }
 
-#portfolio * {
+#modals * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #portfolio .portfolio-item {
+    #modals .modals-item {
         margin: 0 0 30px;
     }
 }
@@ -760,7 +760,7 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
-.portfolio-modal .modal-content {
+.modals-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
     border: 0;
@@ -771,32 +771,32 @@ ul.social-buttons li a:active {
     box-shadow: none;
 }
 
-.portfolio-modal .modal-content h2 {
+.modals-modal .modal-content h2 {
     margin-bottom: 15px;
     font-size: 3em;
 }
 
-.portfolio-modal .modal-content p {
+.modals-modal .modal-content p {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content p.item-intro {
+.modals-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-family: $header-font;
     font-size: 16px;
     font-style: italic;
 }
 
-.portfolio-modal .modal-content ul.list-inline {
+.modals-modal .modal-content ul.list-inline {
     margin-top: 0;
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content img {
+.modals-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .close-modal {
+.modals-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -806,11 +806,11 @@ ul.social-buttons li a:active {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
+.modals-modal .close-modal:hover {
     opacity: .3;
 }
 
-.portfolio-modal .close-modal .lr {
+.modals-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -821,7 +821,7 @@ ul.social-buttons li a:active {
     transform: rotate(45deg);
 }
 
-.portfolio-modal .close-modal .lr .rl {
+.modals-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;

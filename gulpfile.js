@@ -41,7 +41,7 @@ gulp.task("clean:prod", del.bind(null, [path.deploy]));
 // This will build the site with the production settings
 gulp.task("jekyll:dev", $.shell.task("jekyll build"));
 
-gulp.task("jekyll-rebuild", ["jekyll:dev"], function () {
+gulp.task("jekyll-rebuild", ["inject"], function () {
   reload;
 });
 
@@ -71,32 +71,9 @@ gulp.task("fonts", function () {
     .pipe($.size({ title: "fonts" }));
 });
 
-// // inject bower components
-// gulp.task('wiredep', function() {
-//   var wiredep = require('wiredep').stream;
 
-//   gulp.src(path.src + '/' + path.css + '/*.scss')
-//     .pipe(wiredep({
-//         directory: path.src + '/' + path.bower
-//     }))
-//     .pipe(gulp.dest(path.src + '/' + path.css));
-
-//   gulp.src(path.src + '/**/*.html')
-//     .pipe(wiredep({
-//         directory: path.src + '/' + path.bower
-//     }))
-//     .pipe(gulp.dest(path.src));
-// });
-//
-// gulp.task('vendor-scripts', function() {
-//   return gulp.src(wiredep().js).pipe(gulp.dest(path.build + '/' + path.js));
-// });
-
-// gulp.task('vendor-css', function() {
-//   return gulp.src(wiredep().css).pipe(gulp.dest(path.build + '/' + path.css));
-// });
-
-gulp.task('index', ['jekyll:dev'], function() {
+// Injecting our bower components
+gulp.task('inject', ['jekyll:dev'], function() {
 
   gulp.src(wiredep().js).pipe(gulp.dest(path.build + '/' + path.js));
   gulp.src(wiredep().css).pipe(gulp.dest(path.build + '/' + path.css));
@@ -191,7 +168,7 @@ gulp.task("doctor", $.shell.task("jekyll doctor"));
 // BrowserSync will serve our site on a local server for us and other devices to use
 // It will also autoreload across all devices as well as keep the viewport synchronized
 // between them.
-gulp.task("serve:dev", ["jekyll:dev", "index"], function () {
+gulp.task("serve:dev", ["clean:dev", "inject"], function () {
   bs = browserSync({
     notify: true,
     // tunnel: "",
@@ -204,7 +181,7 @@ gulp.task("serve:dev", ["jekyll:dev", "index"], function () {
 // These tasks will look for files that change while serving and will auto-regenerate or
 // reload the website accordingly. Update or add other files you need to be watched.
 gulp.task("watch", function () {
-  gulp.watch([path.src + '/**/*.md', path.src + '/**/*.html', path.src + '/**/*.xml', path.src + '/**/*.txt', path.src + '/**/*.js', path.src + '/**/*.scss', path.src + '/*.yml'], ['jekyll-rebuild']);
+  gulp.watch([path.src + '/**/*.md', path.src + '/**/*.html', path.src + '/**/*.xml', path.src + '/**/*.txt', path.src + '/**/*.js', path.src + '/**/*.scss'], ['jekyll-rebuild']);
   gulp.watch([path.build + '/' + path.css + '/*.css'], reload);
 });
 

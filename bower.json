@@ -19,8 +19,6 @@
     "jquery": "~1.11.0",
     "bootstrap-sass": "~3.3.3",
     "jquery-easing": "*",
-    "classie": "~1.0.1",
-    "AnimatedHeader": "git://github.com/codrops/AnimatedHeader.git",
     "jqBootstrapValidation": "~1.3.7"
   },
   "overrides": {
