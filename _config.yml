@@ -32,7 +32,7 @@ limit_posts: 10
 
 sass:
   sass_dir: _sass
-  style: compressed
+  # style: compressed
 
 # Team names, titles and social links
 people:

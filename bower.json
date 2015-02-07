@@ -17,7 +17,7 @@
   "dependencies": {
     "font-awesome": "~4.3.0",
     "jquery": "~1.11.0",
-    "bootstrap": "~3.2.0",
+    "bootstrap-sass": "~3.3.3",
     "jquery-easing": "*",
     "classie": "~1.0.1",
     "AnimatedHeader": "git://github.com/codrops/AnimatedHeader.git",
