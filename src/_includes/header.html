@@ -18,21 +18,11 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    {% for section in site.data.header %}
                     <li>
-                        <a class="page-scroll" href="#actionitems">Action Items</a>
+                        <a class="page-scroll" href="{{ section.link }}">{{ section.name }}</a>
                     </li>
-                    <li>
-                        <a class="page-scroll" href="#modals">Modals</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#team">Team</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
+                    {% endfor %}
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -46,7 +36,7 @@
             <div class="intro-text">
                 <div class="intro-lead-in">{{site.title}}</div>
                 <div class="intro-heading">{{site.tagline}}</div>
-                <a href="#actionitems" class="page-scroll btn btn-xl">Tell Me More</a>
+                <a href="#actionitems" class="page-scroll btn btn-xl">Get Involved</a>
             </div>
         </div>
     </header>

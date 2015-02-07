@@ -1,14 +1,14 @@
-<!-- Team Section -->
-    <section id="team" class="bg-light-gray">
+<!-- Committee Section -->
+    <section id="committee" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">{{ site.team.heading }}</h2>
-                    <h3 class="section-subheading text-muted">{{ site.team.subheading }}</h3>
+                    <h2 class="section-heading">{{ site.data.committee.heading }}</h2>
+                    <h3 class="section-subheading text-muted">{{ site.data.committee.subheading }}</h3>
                 </div>
             </div>
             <div class="row">
-                {% for member in site.team.people %}
+                {% for member in site.data.committee.people %}
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="assets/img/team/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
@@ -25,7 +25,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">{{ site.team.subtext }}</p>
+                    <p class="large text-muted">{{ site.data.committee.subtext }}</p>
                 </div>
             </div>
         </div>

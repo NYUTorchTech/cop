@@ -1,0 +1,20 @@
+heading: "Get Involved"
+subheading: "Action Items Subheading"
+anchor: actionitems
+sections:
+  - title: "Join a Community"
+    icon: group
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    link: '#join'
+  - title: "Start a Community"
+    icon: thumbs-up
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    link: '#'
+  - title: "Find a Resource"
+    icon: question
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    link: '#'
+  - title: "Connect with Others"
+    icon: comment
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    link: '#'
