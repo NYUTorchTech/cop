@@ -1,0 +1,25 @@
+heading: "Resources"
+subheading: "Resources Subheading"
+anchor: resources
+defaultimage: resources.png
+items:
+  - title: "Join a Community"
+    subtitle:
+    image: resource1.jpg
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    link: '#join'
+  - title: "Start a Community"
+    subtitle:
+    image: resource2.jpg
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    link: '#'
+  - title: "Find a Resource"
+    subtitle:
+    image: resource3.jpg
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    link: '#'
+  - title: "Connect with Others"
+    subtitle:
+    image: resource4.jpg
+    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    link: '#'

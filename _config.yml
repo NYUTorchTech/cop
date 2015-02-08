@@ -58,3 +58,9 @@ picture:
       source_default:
         width: 400
         height: 289
+    resource:
+      attr:
+        itemprop: 'image'
+      source_default:
+        width: 200
+        height: 200

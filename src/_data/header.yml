@@ -2,6 +2,8 @@
   link: '#getinvolved'
 - name: 'Join a Community'
   link: '#join'
+- name: 'Resources'
+  link: '#resources'
 - name: 'About'
   link: '#about'
 - name: 'Committee'
