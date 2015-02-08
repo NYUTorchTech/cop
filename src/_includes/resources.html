@@ -13,16 +13,16 @@
                     {% for resource in site.data.resources.items %}
                         <li{% cycle '', ' class="timeline-inverted"' %}>
                             <div class="timeline-image">
+                                {% assign image = site.data.resources.defaultimage %}
                                 {% if resource.image %}
-                                    {% picture main {{ resource.image }} class="img-circle img-responsive" alt="{{ resource.title }}" %}
-                                {% else %}
-                                    {% picture resource {{ site.data.resources.defaultimage }} class="img-circle img-responsive" alt="{{ resource.title }}" %}
+                                {% assign image = resource.image %}
                                 {% endif %}
+                                {% picture resource {{ image }} class="img-circle img-responsive" alt="{{ resource.title }}" %}
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>{{ resource.title }}</h4>
-                                    {% if resource.subtitle%}
+                                    {% if resource.subtitle %}
                                     <h4 class="subheading">{{ resource.subtitle }}</h4>
                                     {% endif %}
                                 </div>
@@ -34,9 +34,9 @@
                     {% endfor %}
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
+                                <h4>Let's
+                                    <br />Get
+                                    <br />Started!</h4>
                             </div>
                         </li>
                     </ul>
