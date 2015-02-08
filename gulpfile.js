@@ -40,14 +40,13 @@ gulp.task("clean:prod", del.bind(null, [path.deploy]));
 // Runs the build command for Jekyll to compile the site locally
 // This will build the site with the production settings
 gulp.task("jekyll:dev", $.shell.task("jekyll build"));
-
-gulp.task("jekyll-rebuild", function () {
+gulp.task("jekyll-rebuild", ["jekyll:dev"], function () {
   reload;
 });
 
 // Almost identical to the above task, but instead we load in the build configuration
 // that overwrites some of the settings in the regular configuration so that you
-// don"t end up publishing your drafts or future posts
+// don't end up publishing your drafts or future posts
 gulp.task("jekyll:prod", $.shell.task("jekyll build --config _config.yml,_config.build.yml"));
 
 // Optimizes the images that exists
@@ -64,30 +63,33 @@ gulp.task("images", function () {
     .pipe($.size({title: "images"}));
 });
 
-// Copy over fonts
+// Copy over fonts to the path.deploy directory
 gulp.task("fonts", function () {
-  return gulp.src(path.bower + '/font-awesome/fonts/**')
-    .pipe(gulp.dest(path.src + '/' + path.fonts))
+  return gulp.src(path.src + '/' + path.fonts + '/**')
+    .pipe(gulp.dest(path.deploy + '/' + path.fonts))
     .pipe($.size({ title: "fonts" }));
 });
 
 
-// Injecting our bower components
-gulp.task('inject', ['jekyll:dev'], function() {
+// Injecting our bower components and dependencies
+gulp.task('loaddeps', function() {
 
-  gulp.src(wiredep().js).pipe(gulp.dest(path.build + '/' + path.js));
-  gulp.src(wiredep().css).pipe(gulp.dest(path.build + '/' + path.css));
+  gulp.src(path.bower + '/font-awesome/fonts/**')
+    .pipe(gulp.dest(path.src + '/' + path.fonts))
 
-  gulp.src(path.build + '/index.html')
+  gulp.src(wiredep().js).pipe(gulp.dest(path.src + '/' + path.js + '/vendor/'));
+  gulp.src(wiredep().css).pipe(gulp.dest(path.src + '/' + path.css  + '/vendor/'));
+
+  gulp.src(path.src + '/_layouts/default.html')
     .pipe(wiredep.stream({
       fileTypes: {
         html: {
           replace: {
             js: function(filePath) {
-              return '<script src="/' + path.js + '/'+ filePath.split('/').pop() + '"></script>';
+              return '<script src="/' + path.js + '/vendor/'+ filePath.split('/').pop() + '"></script>';
             },
             css: function(filePath) {
-              return '<link rel="stylesheet" href="' + path.css + '/' + filePath.split('/').pop() + '"/>';
+              return '<link rel="stylesheet" href="' + path.css + '/vendor/' + filePath.split('/').pop() + '"/>';
             }
           }
         }
@@ -109,10 +111,10 @@ gulp.task('inject', ['jekyll:dev'], function() {
           return '<link rel="stylesheet" href="' + filePath.replace(path.src, '') + '"/>';
         }
       }))
-    .pipe(gulp.dest(path.build));
+    .pipe(gulp.dest(path.src + '/_layouts/'));
 });
 
-// Copy xml and txt files to the "site" directory
+// Copy xml and txt files to the path.deploy directory
 gulp.task("copy", function () {
   return gulp.src([path.build + '/*.txt', path.build + '/*.xml'])
     .pipe(gulp.dest(path.deploy))
@@ -168,12 +170,12 @@ gulp.task("doctor", $.shell.task("jekyll doctor"));
 // BrowserSync will serve our site on a local server for us and other devices to use
 // It will also autoreload across all devices as well as keep the viewport synchronized
 // between them.
-gulp.task("serve:dev", ["clean:dev", "inject"], function () {
+gulp.task("serve:dev", ["jekyll:dev"], function () {
   bs = browserSync({
     notify: true,
     // tunnel: "",
     server: {
-      baseDir: "serve"
+      baseDir: path.build
     }
   });
 });
@@ -181,7 +183,7 @@ gulp.task("serve:dev", ["clean:dev", "inject"], function () {
 // These tasks will look for files that change while serving and will auto-regenerate or
 // reload the website accordingly. Update or add other files you need to be watched.
 gulp.task("watch", function () {
-  gulp.watch([path.src + '/**/*.md', path.src + '/**/*.html', path.src + '/**/*.xml', path.src + '/**/*.txt', path.src + '/**/*.js', path.src + '/**/*.scss', path.src + '/**/*.yml'], ['jekyll-rebuild', 'inject']);
+  gulp.watch([path.src + '/**/*.md', path.src + '/**/*.html', path.src + '/**/*.xml', path.src + '/**/*.txt', path.src + '/**/*.js', path.src + '/**/*.scss', path.src + '/**/*.yml'], ['jekyll-rebuild']);
   gulp.watch([path.build + '/' + path.css + '/*.css'], reload);
 });
 
@@ -197,7 +199,7 @@ gulp.task("serve:prod", function () {
 });
 
 // Default task, run when just writing "gulp" in the terminal
-gulp.task("default", ["fonts", "serve:dev", "watch"]);
+gulp.task("default", ["serve:dev", "watch"]);
 
 // Checks your CSS, JS and Jekyll for errors
 gulp.task("check", ["jslint", "doctor"], function () {
