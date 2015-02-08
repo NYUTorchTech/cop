@@ -6,7 +6,5 @@
   link: '#resources'
 - name: 'About'
   link: '#about'
-- name: 'Committee'
-  link: '#committee'
 - name: 'Contact'
   link: '#contact'

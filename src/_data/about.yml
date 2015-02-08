@@ -1,10 +1,12 @@
 heading: CoP Operating Committee
 subheading: We put this together!
 subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-people:
+anchor: about
+defaultimage: generic-team.jpg
+members:
   - name: Neyla Zonis
-    pic: 1
-    position: Committee Chair
+    image: team1.jpg
+    role: Committee Chair
     social:
       - title: twitter
         url: #
@@ -14,8 +16,8 @@ people:
         url: #
 
   - name: Larry Parker
-    pic: 2
-    position: Lead Marketer
+    image: team2.jpg
+    role: Lead Marketer
     social:
       - title: twitter
         url: #
@@ -25,8 +27,8 @@ people:
         url: #
 
   - name: Diana Petersen
-    pic: 3
-    position: Lead Developer
+    image: team3.jpg
+    role: Lead Developer
     social:
       - title: twitter
         url: #
