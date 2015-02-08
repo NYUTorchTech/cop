@@ -8,6 +8,10 @@ body {
     color: #777;
 }
 
+.text-muted-reverse {
+    color: #DDD;
+}
+
 .text-primary {
     color: $primary;
 }
@@ -45,7 +49,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+label {
     text-transform: uppercase;
     font-family: $accent-font;
     font-weight: 700;
@@ -652,68 +657,63 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
-    background-color: #222;
+section.emailform {
+    background-color: $accent2;
     background-image: url($contactback);
     background-position: center;
     background-repeat: no-repeat;
 }
 
-section#contact .section-heading {
+section.emailform {
     color: #fff;
 }
 
-section#contact .form-group {
+section.emailform .form-group {
     margin-bottom: 25px;
 }
 
-section#contact .form-group input,
-section#contact .form-group textarea {
-    padding: 20px;
-}
-
-section#contact .form-group input.form-control {
+section.emailform .form-group input.form-control {
     height: auto;
 }
 
-section#contact .form-group textarea.form-control {
-    height: 236px;
+section.emailform .form-group textarea.form-control {
+    height: 120px;
 }
 
-section#contact .form-control:focus {
+section.emailform .form-control:focus {
     border-color: $primary;
     box-shadow: none;
 }
 
-section#contact::-webkit-input-placeholder {
+section.emailform::-webkit-input-placeholder {
     text-transform: uppercase;
     font-family: $accent-font;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-moz-placeholder {
+section.emailform:-moz-placeholder {
     text-transform: uppercase;
     font-family: $accent-font;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact::-moz-placeholder {
+section.emailform::-moz-placeholder {
     text-transform: uppercase;
     font-family: $accent-font;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact:-ms-input-placeholder {
+section.emailform:-ms-input-placeholder {
     text-transform: uppercase;
     font-family: $accent-font;
     font-weight: 700;
     color: #bbb;
 }
 
-section#contact .text-danger {
+section.emailform .text-danger {
     color: #e74c3c;
 }
 
