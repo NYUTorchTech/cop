@@ -42,7 +42,7 @@ permalink: pretty
 # Jekyll Picture Tag Plugin Config
 picture:
   source: _img-orig
-  output: assets/img/modals
+  output: assets/img/resize
   markup: picture
   presets:
     main:
@@ -64,3 +64,9 @@ picture:
       source_default:
         width: 200
         height: 200
+    profilepic:
+      attr:
+        itemprop: 'image'
+      source_default:
+        width: 225
+        height: 225
