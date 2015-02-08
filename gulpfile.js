@@ -181,7 +181,7 @@ gulp.task("serve:dev", ["clean:dev", "inject"], function () {
 // These tasks will look for files that change while serving and will auto-regenerate or
 // reload the website accordingly. Update or add other files you need to be watched.
 gulp.task("watch", function () {
-  gulp.watch([path.src + '/**/*.md', path.src + '/**/*.html', path.src + '/**/*.xml', path.src + '/**/*.txt', path.src + '/**/*.js', path.src + '/**/*.scss'], ['jekyll-rebuild', 'inject']);
+  gulp.watch([path.src + '/**/*.md', path.src + '/**/*.html', path.src + '/**/*.xml', path.src + '/**/*.txt', path.src + '/**/*.js', path.src + '/**/*.scss', path.src + '/**/*.yml'], ['jekyll-rebuild', 'inject']);
   gulp.watch([path.build + '/' + path.css + '/*.css'], reload);
 });
 
