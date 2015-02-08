@@ -12,6 +12,7 @@
                     <ul class="timeline">
                     {% for resource in site.data.resources.items %}
                         <li{% cycle '', ' class="timeline-inverted"' %}>
+                            <a href="{{ resource.link }}"><span class="div-link"></span></a>
                             <div class="timeline-image">
                                 {% assign image = site.data.resources.defaultimage %}
                                 {% if resource.image %}
