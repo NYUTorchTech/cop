@@ -3,22 +3,22 @@ subheading: "Resources Subheading"
 anchor: resources
 defaultimage: generic-resource.jpg
 items:
-  - title: "Join a Community"
+  - title: "Want to start a Community?"
     subtitle:
     image: resource1.jpg
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-    link: '#join'
-  - title: "Find a Resource"
+    link: '#'
+  - title: "CoP Guidelines"
     subtitle:
     image: resource3.jpg
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
     link: '#'
-  - title: "Start a Community"
+  - title: "NYU Resources"
     subtitle:
     image: resource2.jpg
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
     link: '#'
-  - title: "Connect with Others"
+  - title: "Checklist"
     subtitle:
     image: resource4.jpg
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
