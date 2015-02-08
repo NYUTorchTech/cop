@@ -19,7 +19,7 @@
                         {% if post.image.thumb %}
                             {% picture thumb {{ post.image.thumb }} class="img-responsive" alt="{{ post.image.thumbalt }}" %}
                         {% else %}
-                            {% picture thumb {{ site.thumb }} class="img-responsive" alt="" %}
+                            {% picture thumb {{ site.data.modals.defaultimage }} class="img-responsive" alt="" %}
                         {% endif %}
                     </a>
                     <div class="modals-caption">
