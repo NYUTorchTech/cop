@@ -1,6 +1,13 @@
 <?php
-
+// for debugging
 ini_set('display_errors', 1);
+
+function clean($string) {
+   $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+   $string = preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
+
+   return preg_replace('/-+/', '-', $string); // Replaces multiple hyphens with single one.
+}
 
 // let's not have bots accessing this form willy-nilly
 if( $_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -12,7 +19,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
         $body .= $name .': '. $cleanvals[$name] .PHP_EOL;
     }
     if(!empty($cleanvals['name'])) {
-        $file = 'subs/' . $cleanvals['name'] . '.txt';
+        $file = 'subs/' . clean($cleanvals['name']) . '.txt';
     } else {
         $file = $defaultfile;
     }
@@ -24,19 +31,18 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $to = 'jannae@gmail.com';
     $subj = 'New CoP Submitted';
-    $headers = 'From:'. $sender .'\n'; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+    $headers = 'From:'. $sender .'\n';
     $headers .= "Reply-To: $sender";
 
-    $contents = '';
+    date_default_timezone_set('America/New_York');
+    $submitted = date('Y-m-d H:i:s');
 
-    // Open the file to get existing content
-    if($file == $defaultfile) {
-        $contents = file_get_contents($file);
-    }
-    $contents .= 'To: ' . $to.PHP_EOL . 'Subject: ' . $subj.PHP_EOL . 'Headers: ' . $headers.PHP_EOL.PHP_EOL.'Body: ' . $body.PHP_EOL.PHP_EOL;
-    file_put_contents($file, $contents);
+    $contents = 'Submitted: ' . $submitted.PHP_EOL . 'To: ' . $to.PHP_EOL . 'Subject: ' . $subj.PHP_EOL . 'Headers: ' . $headers.PHP_EOL.PHP_EOL.'Body: ' . $body.PHP_EOL.PHP_EOL;
 
-    // mail($to,$subj,$body,$headers);
+    file_put_contents($file, $contents, FILE_APPEND | LOCK_EX);
+
+    mail($to,$subj,$body,$headers);
+
     return true;
 }
 ?>
