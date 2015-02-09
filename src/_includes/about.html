@@ -15,7 +15,7 @@
                         {% if member.image %}
                             {% assign image = member.image %}
                         {% endif %}
-                        {% picture profilepic {{ image }} class="img-circle img-responsive" alt="{{ member.title }}" %}
+                        {% picture profilepic {{ image }} class="img-circle img-responsive" alt="{{ member.name }}" %}
                         <h4>{{ member.name }}</h4>
                         <p class="text-muted">{{ member.role }}</p>
                         <ul class="list-inline social-buttons">
