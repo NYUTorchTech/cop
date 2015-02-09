@@ -8,48 +8,42 @@ $(function() {
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
-            var cop-name = $("input#cop-name").val();
-            var cop-description = $("textarea#cop-description").val();
-            var cop-goal = $("textarea#cop-goal").val();
-            var cop-members = $("select#cop-members").val();
-            var cop-process = $("textarea#cop-process").val();
+            var copname = $("input#cop-name").val();
+            var copdescription = $("textarea#cop-description").val();
+            var copgoal = $("textarea#cop-goal").val();
+            var copmembers = $("select#cop-members").val();
+            var copprocess = $("textarea#cop-process").val();
             // meeting style checkboxes
-            var cop-mtginperson = $("input#cop-mtginperson").val();
-            var cop-mtgremote = $("input#cop-mtgremote").val();
+            var copmtginperson = $("input#cop-mtginperson").val();
+            var copmtgremote = $("input#cop-mtgremote").val();
 
-            var cop-mtgfrequency = $("select#cop-mtgfrequency").val();
+            var copmtgfrequency = $("select#cop-mtgfrequency").val();
             //Contact Info:
-            var cop-contact1-name = $("input#cop-contact1-name").val();
-            var cop-contact1-email = $("input#cop-contact1-email").val();
-            var cop-contact1-phone = $("input#cop-contact1-phone").val();
-            var cop-contact2-name = $("input#cop-contact2-name").val();
-            var cop-contact2-email = $("input#cop-contact2-email").val();
-            var cop-contact2-phone = $("input#cop-contact2-phone").val();
+            var copcontact1name = $("input#cop-contact1-name").val();
+            var copcontact1email = $("input#cop-contact1-email").val();
+            var copcontact1phone = $("input#cop-contact1-phone").val();
+            var copcontact2name = $("input#cop-contact2-name").val();
+            var copcontact2email = $("input#cop-contact2-email").val();
+            var copcontact2phone = $("input#cop-contact2-phone").val();
 
-            // For Success/Failure Message
-            // Check for white space in name for Success/Fail message
-            var firstName = name;
-            if (firstName.indexOf(' ') >= 0) {
-                firstName = name.split(' ').slice(0, -1).join(' ');
-            }
             $.ajax({
                 url: "././mail/get_started.php",
                 type: "POST",
                 data: {
-                    name: cop-name,
-                    description: cop-description,
-                    goal: cop-goal,
-                    members: cop-members,
-                    process: cop-process,
-                    mtginperson: cop-mtginperson,
-                    mtgremote: cop-mtgremote,
-                    mtgfrequency: cop-mtgfrequency,
-                    contact1-name: cop-contact1-name,
-                    contact1-email: cop-contact1-email,
-                    contact1-phone: cop-contact1-phone,
-                    contact2-name: cop-contact2-name,
-                    contact2-email: cop-contact2-email,
-                    contact2-phone: cop-contact2-phone
+                    name: copname,
+                    description: copdescription,
+                    goal: copgoal,
+                    members: copmembers,
+                    process: copprocess,
+                    mtginperson: copmtginperson,
+                    mtgremote: copmtgremote,
+                    mtgfrequency: copmtgfrequency,
+                    contact1name: copcontact1name,
+                    contact1email: copcontact1email,
+                    contact1phone: copcontact1phone,
+                    contact2name: copcontact2name,
+                    contact2email: copcontact2email,
+                    contact2phone: copcontact2phone
                 },
                 cache: false,
                 success: function() {
@@ -70,7 +64,7 @@ $(function() {
                     $('#success').html("<div class='alert alert-danger'>");
                     $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
                         .append("</button>");
-                    $('#success > .alert-danger').append("<strong>Sorry " + firstName + ", it seems that my mail server is not responding. Please try again later!");
+                    $('#success > .alert-danger').append("<strong>Sorry, it seems that my mail server is not responding. Please try again later!");
                     $('#success > .alert-danger').append('</div>');
                     //clear all fields
                     $('#contactForm').trigger("reset");
