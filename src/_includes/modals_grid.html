@@ -16,11 +16,11 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
+                        {% assign image = site.data.modals.defaultimage %}
                         {% if post.image.thumb %}
-                            {% picture thumb {{ post.image.thumb }} class="img-responsive" alt="{{ post.image.thumbalt }}" %}
-                        {% else %}
-                            {% picture thumb {{ site.data.modals.defaultimage }} class="img-responsive" alt="" %}
+                            {% assign image = post.image.thumb %}
                         {% endif %}
+                        {% picture thumb {{ image }} class="img-responsive" alt="{{ post.title }}" %}
                     </a>
                     <div class="modals-caption">
                         <h4>{{ post.title }}</h4>
