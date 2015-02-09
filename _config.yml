@@ -37,7 +37,7 @@ sass:
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /cop/:title
 
 # Jekyll Picture Tag Plugin Config
 picture:
