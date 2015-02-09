@@ -3,14 +3,35 @@
 
 # TEAM
 
-    NYU CoP Committee -- <role> -- @
+    NYU Communities of Practice Planning Committee
+
+    Committee Chair: Neyla Zonis
+
+    Lead Marketer: Chris Barrows
+
+    Community Intake: Kevin McCullough
+
+    Website Technical Lead: Jannae Jacks
+    Twitter: @jannae79
+
+    Google Groups Technical Lead: Razi Ahmad
+
+    Community Outreach: Lendyll Capitulo
+
+    Committee Support and Advisement: Kristina Zacharias
+
+    Committee Support and Advisement: Vincent Hou
 
 # THANKS
 
-    <name>
+    NYU TorchTech
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3, JavaScript
-    Jekyll, Lanyon/Poole, HTML5 Boilerplate
-    Yeoman, Jekyllized
+    Jekyll, Bootstrap, Yeoman,
+    Jekyllized
+
+# SITE
+    Doctype:HTML5
+    IDE: Sublime Text

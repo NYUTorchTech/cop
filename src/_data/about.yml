@@ -5,33 +5,71 @@ anchor: about
 defaultimage: generic-team.jpg
 members:
   - name: Neyla Zonis
-    image: team1.jpg
+    image:
     role: Committee Chair
     social:
-      - title: twitter
-        url: #
-      - title: facebook
-        url: #
-      - title: stack-overflow
-        url: #
-
-  - name: Larry Parker
-    image: team2.jpg
+      - title: envelope
+        url: "mailto:nelya.zonis@nyu.edu"
+  - name: Chris Barrows
+    image:
     role: Lead Marketer
     social:
-      - title: twitter
-        url: #
+      - title: envelope
+        url: "mailto:cb170@nyu.edu"
       - title: facebook
+        url: #
+      - title: twitter
         url: #
       - title: linkedin
         url: #
-
-  - name: Diana Petersen
-    image: team3.jpg
-    role: Lead Developer
+  - name: Kevin McCullough
+    image:
+    role: Community Intake
     social:
+      - title: envelope
+        url: "mailto:km2429@nyu.edu"
+  - name: Jannae Jacks
+    image:
+    role: Website Technical Lead
+    social:
+      - title: envelope
+        url: "mailto:jannae@nyu.edu"
+      - title: github
+        url: #
       - title: twitter
         url: #
+  - name: Razi Ahmad
+    image:
+    role: Google Groups Technical Lead
+    social:
+      - title: envelope
+        url: "mailto:razi@nyu.edu"
+  - name: Lendyll Capitulo
+    image:
+    role: Community Outreach
+    social:
+      - title: envelope
+        url: "mailto:lec321@nyu.edu"
+      - title: facebook
+        url: #
+      - title: google-plus
+        url: #
+  - name: Kristina Zacharias
+    image:
+    role: Committee Support and Advisement
+    social:
+      - title: envelope
+        url: "mailto:kristina.zacharias@nyu.edu"
+      - title: facebook
+        url: #
+      - title: google-plus
+        url: #
+  - name: Vincent Hou
+    image:
+    role: Committee Support and Advisement
+    social:
+      - title: envelope
+        url: "mailto:vh265@nyu.edu"
       - title: facebook
         url: #
       - title: google-plus
