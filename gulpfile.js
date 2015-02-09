@@ -180,6 +180,26 @@ gulp.task("serve:dev", ["jekyll:dev"], function () {
   });
 });
 
+// Task to upload your site via Rsync to your server
+gulp.task('deploy', function () {
+  // Load in the variables needed for our Rsync synchronization
+  var secret = require('./._rsync.json');
+
+  return gulp.src('site/**')
+    .pipe($.rsync({
+      // This uploads the contents of 'root', instead of the folder
+      root: 'site',
+      // Credentials ignored by repository
+      hostname: secret.hostname,
+      username: secret.username,
+      destination: secret.destination,
+      // Incremental uploading, adds a small delay but minimizes the amount of files transferred
+      incremental: true,
+      // Shows the progress on your files while uploading
+      progress: true
+  }));
+});
+
 // These tasks will look for files that change while serving and will auto-regenerate or
 // reload the website accordingly. Update or add other files you need to be watched.
 gulp.task("watch", function () {
