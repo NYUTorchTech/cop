@@ -12,6 +12,7 @@
     "gulp-cache": "~0.2.2",
     "gulp-cached": "^1.0.1",
     "gulp-changed": "^1.0.0",
+    "gulp-connect-php": "0.0.3",
     "gulp-filter": "^2.0.0",
     "gulp-gzip": "0.0.8",
     "gulp-htmlmin": "^0.2.0",

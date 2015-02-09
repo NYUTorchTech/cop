@@ -16,6 +16,8 @@ var reload = browserSync.reload;
 // And define a variable that BrowserSync uses in it's function
 var bs;
 
+var php = require('gulp-connect-php');
+
 // useful file paths
 var path = {
   src    : 'src',
@@ -116,7 +118,7 @@ gulp.task('loaddeps', function() {
 gulp.task('copy', function () {
   return gulp.src([path.build + '/*.txt', path.build + '/*.xml'])
     .pipe(gulp.dest(path.deploy))
-    .pipe($.size({ title: 'xml & txt' }))
+    .pipe($.size({ title: 'xml & txt' }));
 });
 
 // Optimizes all the CSS, HTML and concats the JS etc
@@ -130,7 +132,7 @@ gulp.task('html', function () {
     // Minify CSS
     .pipe($.if('*.css', $.minifyCss()))
     // Start cache busting the files
-    .pipe($.revAll({ ignore: ['.eot', '.svg', '.ttf', '.woff'] }))
+    .pipe($.revAll({ ignore: ['.eot', '.svg', '.ttf', '.woff', '.php'] }))
     .pipe(assets.restore())
     // Conctenate your files based on what you specified in _layout/header.html
     .pipe($.useref())
@@ -205,16 +207,38 @@ gulp.task('watch', function () {
   gulp.watch([path.build + '/' + path.css + '/*.css'], reload);
 });
 
-// Serve the site after optimizations to see that everything looks fine
-gulp.task('serve:prod', function () {
-  bs = browserSync({
-    notify: false,
-    // tunnel: true,
-    server: {
-      baseDir: path.deploy
-    }
+
+gulp.task('connect-sync', function() {
+  php.server({}, function (){
+    browserSync({
+      proxy: 'localhost:8000'
+    });
+  });
+
+  gulp.watch('**/*.php').on('change', function () {
+    browserSync.reload();
   });
 });
+
+// Serve the site after optimizations to see that everything looks fine
+gulp.task('serve:prod', function () {
+  php.server({
+    base: path.deploy,
+    open: true
+  }, function (){
+      bs = browserSync({
+        proxy: '127.0.0.1:8000',
+        notify: false,
+        // tunnel: true,
+        server: {
+          baseDir: path.deploy
+        }
+    });
+  });
+});
+
+
+
 
 // Default task, run when just writing 'gulp' in the terminal
 gulp.task('default', ['serve:dev', 'watch']);
