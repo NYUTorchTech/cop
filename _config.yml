@@ -48,25 +48,19 @@ picture:
     main:
       attr:
         alt: 'main image'
-        itemprop: 'image'
       source_default:
         width: 600
     thumb:
       attr:
         alt: 'thumbnail'
-        itemprop: 'image'
       source_default:
         width: 400
         height: 289
     resource:
-      attr:
-        itemprop: 'image'
       source_default:
         width: 200
         height: 200
     profilepic:
-      attr:
-        itemprop: 'image'
       source_default:
         width: 225
         height: 225
