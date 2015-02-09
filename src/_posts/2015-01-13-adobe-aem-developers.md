@@ -7,7 +7,6 @@ image:
   main: aem-group2.jpg
   mainalt: Adobe AEM Developers Group
   thumb: aem-group2.jpg
-  thumbalt: Adobe AEM Developers Group
 organized-date: April 2011
 organizers:
 - name: John Snow

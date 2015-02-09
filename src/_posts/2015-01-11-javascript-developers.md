@@ -7,7 +7,6 @@ image:
   main: javascript-group.png
   mainalt: Javascript Developers Group
   thumb: javascript-group.png
-  thumbalt: Javascript Developers Group
 organized-date: April 2011
 organizers:
 - name: John Snow

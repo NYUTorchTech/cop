@@ -4,10 +4,9 @@ subtitle: Subtitle?
 layout: default
 date: 2015-01-10
 image:
+  thumb: social-ambassadors.jpg
   main: social-ambassadors.jpg
   mainalt: Social Media Ambassadors
-  thumb: social-ambassadors.jpg
-  thumbalt: Social Media Ambassadors
 organized-date: April 2011
 organizers:
 - name: Chris Barrows

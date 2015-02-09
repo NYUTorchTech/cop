@@ -7,7 +7,6 @@ image:
   main:
   mainalt: COP Operating Committee
   thumb:
-  thumbalt: COP Operating Committee
 organized-date: April 2011
 organizers:
 - name: John Snow
