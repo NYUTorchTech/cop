@@ -41,7 +41,7 @@ permalink: /cop/:title
 # Jekyll Picture Tag Plugin Config
 picture:
   source: _img-orig
-  output: assets/img/resize
+  output: assets/img/gen
   markup: picture
   presets:
     main:
