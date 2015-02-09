@@ -139,15 +139,14 @@ gulp.task('html', function () {
     // Replace the asset names with their cache busted names
     .pipe($.revReplace())
     // Minify HTML
-    .pipe($.if('*.html', $.htmlmin({
-      removeComments: true,
-      removeCommentsFromCDATA: true,
-      removeCDATASectionsFromCDATA: true,
-      collapseWhitespace: true,
-      collapseBooleanAttributes: true,
-      removeAttributeQuotes: true,
-      removeRedundantAttributes: true
-    })))
+    // .pipe($.if('*.html', $.htmlmin({
+    //   removeComments: true,
+    //   removeCommentsFromCDATA: true,
+    //   removeCDATASectionsFromCDATA: true,
+    //   collapseWhitespace: true,
+    //   collapseBooleanAttributes: true,
+    //   removeRedundantAttributes: true
+    // })))
     // Send the output to the correct folder
     .pipe(gulp.dest('site'))
     .pipe($.size({title: 'optimizations'}));
