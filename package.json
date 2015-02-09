@@ -1,8 +1,8 @@
 {
-  "name": "cop",
+  "name": "nyucop",
   "private": true,
   "version": "0.0.0",
-  "description": "Yeoman workflow for cop",
+  "description": "Yeoman workflow for NYU Communities of Practice Site",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^1.5.7",
