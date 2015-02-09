@@ -5,7 +5,6 @@ description: Bringing people together
 tagline: Bringing people together
 email: your-email@domain.com
 url: //localhost:3000
-thumb: roundicons-thumbnail.png
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
