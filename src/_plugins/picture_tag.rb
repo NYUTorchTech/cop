@@ -151,18 +151,18 @@ module Jekyll
         source_tags = ''
         source_keys.each { |source|
           media = " media=\"#{instance[source]['media']}\"" unless source == 'source_default'
-          source_tags += "#{markdown_escape * 4}<source srcset=\"#{instance[source][:generated_src]}\"#{media}>\n"
+          source_tags += "#{markdown_escape * 4}<source src=\"#{instance[source][:generated_src]}\"#{media}>\n"
         }
 
         # Note: we can't indent html output because markdown parsers will turn 4 spaces into code blocks
         # Note: Added backslash+space escapes to bypass markdown parsing of indented code below -WD
         picture_tag = "<picture>\n"\
                       "#{source_tags}"\
-                      "#{markdown_escape * 4}<img srcset=\"#{instance['source_default'][:generated_src]}\" #{html_attr_string}>\n"\
+                      "#{markdown_escape * 4}<img src=\"#{instance['source_default'][:generated_src]}\" #{html_attr_string}>\n"\
                       "#{markdown_escape * 2}</picture>\n"
 
       elsif settings['markup'] == 'img'
-        # TODO implement <img srcset/sizes>
+        # TODO implement <img src/sizes>
       end
 
         # Return the markup!
