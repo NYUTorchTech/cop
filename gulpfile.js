@@ -193,7 +193,9 @@ gulp.task('deploy', function () {
       username: secret.username,
       destination: secret.destination,
       // Incremental uploading, adds a small delay but minimizes the amount of files transferred
-      incremental: true,
+      // incremental: true,
+      clean: true,
+      recursive: true,
       // Shows the progress on your files while uploading
       progress: true
   }));
