@@ -35,7 +35,7 @@ $(function() {
                 url: '././mail/get_started.php',
                 type: 'POST',
                 data: {
-                    name: copname,
+                    title: copname,
                     description: copdescription,
                     goal: copgoal,
                     members: copmembers,
