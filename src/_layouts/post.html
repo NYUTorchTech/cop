@@ -2,3 +2,32 @@
 layout: default
 ---
 
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+                <h2>{{ post.title }}</h2>
+                <hr class="star-primary">
+                {% if post.image.main %}
+                    {% picture main {{ post.image.main }} class="img-responsive img-centered" alt="{{ post.image.mainalt }}" %}
+                {% endif %}
+                {{ post.content }}
+                {% for organizer in post.organizers %}
+                <ul class="list-inline item-details">
+                    {% if organizer.isPrimary %}
+                    <li><strong>Primary:</strong></li>
+                    {% else %}
+                    <li>&nbsp;</li>
+                    {% endif %}
+                    <li>Community Organizer:
+                        <strong>{{ organizer.name }}</strong>
+                    </li>
+                    <li>Contact:
+                        <strong>{{ organizer.contact }}</strong>
+                    </li>
+                </ul>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
