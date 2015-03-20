@@ -1,21 +1,21 @@
 ---
-title: Javascript Developers
+title: Code Review
 subtitle: Short description
 layout: default
 date: 2015-01-11
 image:
-  main: javascript-group.png
-  mainalt: Javascript Developers Group
-  thumb: javascript-group.png
+  main: code-review.jpg
+  mainalt: Code Review
+  thumb: code-review.jpg
 organized-date: April 2011
 organizers:
-- name: John Snow
+- name: Zach Elliot
   contact:
   isPrimary: true
-- name: Someone Else
+- name: Jannae Jacks
   contact:
   isPrimary: false
-category: Javascript
+category: Code
 tags: []
 ---
 
