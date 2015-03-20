@@ -23,7 +23,7 @@ $(function() {
             var copmtgremote = $('input#cop-mtgremote').val();
 
             var copmtgfrequency = $('select#cop-mtgfrequency').val();
-            var copcontactinfo = $('select#cop-groupcontact').val();
+            var copcontactinfo = $('input#cop-groupcontact').val();
             //Contact Info:
             var copcontact1name = $('input#cop-contact1-name').val();
             var copcontact1email = $('input#cop-contact1-email').val();

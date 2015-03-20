@@ -30,8 +30,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
         $sender = 'noreply@nyu.edu';
     }
 
-    $to = 'jannae@gmail.com';
-    $subj = 'New CoP Submitted';
+    $to = 'jannae@nyu.edu';
+    $subj = 'New CoP Submitted for '.$cleanvals['title'];
 
     $headers = 'From: '. $sender.$ln;
     $headers .= 'Reply-To: '.$sender;
@@ -45,7 +45,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
     $md .= 'subtitle: '.$ln;
     $md .= 'layout: default'.$ln;
     $md .= 'date: '.$submitted.$ln;
-    $md .= 'contactinfo: '.$groupcontact.$ln;
+    $md .= 'contactinfo: '.$cleanvals['groupcontact'].$ln;
     $md .= 'image:'.$ln;
     $md .= '  main:'.$ln;
     $md .= '  mainalt:'.$ln;
@@ -57,11 +57,13 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
     $md .= '  remote: '.$cleanvals['mtgremote'].$ln;
     $md .= '  frequency: '.$cleanvals['mtgfrequency'].$ln;
     $md .= 'organizers:'.$ln;
-    $md .= '- name: '.$cleanvals['contact1-name'].$ln;
-    $md .= '  contact: '.$cleanvals['contact1-email'].$ln;
+    $md .= '- name: '.$cleanvals['contact1name'].$ln;
+    $md .= '  contact: '.$cleanvals['contact1email'].$ln;
+    $md .= '  phone: '.$cleanvals['contact1phone'].$ln;
     $md .= '  isPrimary: true'.$ln;
-    $md .= '- name: '.$cleanvals['contact2-name'].$ln;
-    $md .= '  contact: '.$cleanvals['contact2-email'].$ln;
+    $md .= '- name: '.$cleanvals['contact2name'].$ln;
+    $md .= '  contact: '.$cleanvals['contact2email'].$ln;
+    $md .= '  phone: '.$cleanvals['contact2phone'].$ln;
     $md .= '  isPrimary: false'.$ln;
     $md .= 'tags: []'.$ln;
     $md .= '---'.$ln2;
