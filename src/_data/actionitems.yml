@@ -4,17 +4,17 @@ anchor: getinvolved
 sections:
   - title: "Join a Community"
     icon: group
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    text: "Browse and join already existing communities."
     link: '#join'
   - title: "Start a Community"
     icon: thumbs-up
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    text: "Register your community to appear on this site."
     link: '#start'
   - title: "Find a Resource"
     icon: question
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    text: "Guidelines for starting a community, and learn more about tools available to you"
     link: '#resources'
 # - title: "Connect with Others"
 #   icon: comment
-#   text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+#   text: "Connect with others and exchanging ideas through the CoP message board(?) forum(?) Google Group(?)."
 #   link: '#'
