@@ -60,7 +60,7 @@ gulp.task('styles', function () {
     // AutoPrefix your CSS so it works between browsers
     .pipe($.autoprefixer('last 1 version', { cascade: true }))
     // Directory your CSS file goes to
-    // .pipe(gulp.dest(path.src + '/' + path.css + '/'))
+    .pipe(gulp.dest(path.src + '/' + path.css + '/'))
     .pipe(gulp.dest(path.serve + '/' + path.css + '/'))
     // Outputs the size of the CSS file
     .pipe($.size({title: 'styles'}))
