@@ -45,7 +45,13 @@ Default task: Builds and serves the project locally. Watches for file updates.
 
     gulp deploy
 
-`rsync` task*: Deploys to a server (not github). Here as a placeholder for future plans.
+### To deploy changes to the php form script:
+
+`phpscript` task: does everything publish does, but uses the _config.phpscript.yml config file, which serves to a root directory on my server.
+
+    gulp phpscript
+
+`rsync` task*: Deploys to a server (not github). Currently specifically syncs the site to <http://cop.jann.ae>
 
     gulp rsync
 
@@ -53,4 +59,5 @@ Default task: Builds and serves the project locally. Watches for file updates.
 
     cp rsync.json.example ._rsync.json
 
-Edit the new `._rsync.json` file to include the necessary information for an rsync deploy. **DO NOT COMMIT THIS FILE**
+Edit the new `._rsync.json` file to include the necessary information for an rsync deploy.
+**DO NOT COMMIT THIS FILE**
