@@ -21,7 +21,7 @@ var php = require('gulp-connect-php');
 // useful file paths
 var path = {
   src    : 'src',
-  build  : 'serve',
+  serve  : 'serve',
   deploy : 'site',
   bower  : '_bower_components',
   assets : 'assets',
@@ -34,7 +34,7 @@ var path = {
 var wiredep = require('wiredep');
 
 // Deletes the directory that is used to serve the site during development
-gulp.task('clean:dev', del.bind(null, [path.build]));
+gulp.task('clean:dev', del.bind(null, [path.serve]));
 
 // Deletes the directory that the optimized site is output to
 gulp.task('clean:prod', del.bind(null, [path.deploy]));
@@ -47,7 +47,7 @@ gulp.task('jekyll-rebuild', ['jekyll:dev'], function () { reload; });
 // Almost identical to the above task, but instead we load in the build configuration
 // that overwrites some of the settings in the regular configuration so that you
 // don't end up publishing your drafts or future posts
-gulp.task('jekyll:prod', $.shell.task('jekyll build --config _config.yml,_config.build.yml'));
+gulp.task('jekyll:prod', $.shell.task('jekyll build --verbose --config _config.yml,_config.build.yml'));
 
 // Optimizes the images that exists
 gulp.task('images', function () {
@@ -114,18 +114,18 @@ gulp.task('loaddeps', function() {
     .pipe(gulp.dest(path.src + '/_layouts/'));
 });
 
-// Copy xml and txt files to the path.deploy directory
-gulp.task('copy', function () {
-  return gulp.src([path.build + '/*.txt', path.build + '/*.xml'])
-    .pipe(gulp.dest(path.deploy))
-    .pipe($.size({ title: 'xml & txt' }));
-});
+// // Copy xml and txt files to the path.deploy directory
+// gulp.task('copy', function () {
+//   return gulp.src([path.src + '/*.txt', path.src + '/*.xml'])
+//     .pipe(gulp.dest(path.deploy))
+//     .pipe($.size({ title: 'xml & txt' }));
+// });
 
 // Optimizes all the CSS, HTML and concats the JS etc
 gulp.task('html', function () {
-  var assets = $.useref.assets({searchPath: path.build});
+  var assets = $.useref.assets({searchPath: path.deploy});
 
-  return gulp.src(path.build + '/**/*.html')
+  return gulp.src(path.deploy + '/**/*.html')
     .pipe(assets)
     // Concatenate JavaScript files and preserve important comments
     .pipe($.if('*.js', $.uglify({preserveComments: 'some'})))
@@ -148,7 +148,7 @@ gulp.task('html', function () {
     //   removeRedundantAttributes: true
     // })))
     // Send the output to the correct folder
-    .pipe(gulp.dest('site'))
+    .pipe(gulp.dest(path.deploy))
     .pipe($.size({title: 'optimizations'}));
 });
 
@@ -156,7 +156,7 @@ gulp.task('html', function () {
 
 // Run JS Lint against your JS
 gulp.task('jslint', function () {
-  gulp.src('./' + path.build + '/' + path.js + '/*.js')
+  gulp.src('./' + path.serve + '/' + path.js + '/*.js')
     // Checks your JS code quality against your .jshintrc file
     .pipe($.jshint('.jshintrc'))
     .pipe($.jshint.reporter());
@@ -174,7 +174,7 @@ gulp.task('serve:dev', ['jekyll:dev'], function () {
     notify: true,
     // tunnel: '',
     server: {
-      baseDir: path.build
+      baseDir: path.serve
     }
   });
 });
@@ -210,7 +210,7 @@ gulp.task('ghpages', function() {
 // reload the website accordingly. Update or add other files you need to be watched.
 gulp.task('watch', function () {
   gulp.watch([path.src + '/**/*.md', path.src + '/**/*.html', path.src + '/**/*.xml', path.src + '/**/*.txt', path.src + '/**/*.js', path.src + '/**/*.scss', path.src + '/**/*.yml'], ['jekyll-rebuild']);
-  gulp.watch([path.build + '/' + path.css + '/*.css'], reload);
+  gulp.watch([path.serve + '/' + path.css + '/*.css'], reload);
 });
 
 
@@ -243,9 +243,6 @@ gulp.task('serve:prod', function () {
   });
 });
 
-
-
-
 // Default task, run when just writing 'gulp' in the terminal
 gulp.task('default', ['serve:dev', 'watch']);
 
@@ -260,5 +257,5 @@ gulp.task('build', ['jekyll:prod'], function () {});
 // Builds your site with the 'build' command and then runs all the optimizations on
 // it and outputs it to './site'
 gulp.task('publish', ['build'], function () {
-  gulp.start('html', 'copy', 'images', 'fonts');
+  gulp.start('html', 'images', 'fonts');
 });
