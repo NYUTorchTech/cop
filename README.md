@@ -1,3 +1,3 @@
 # NYU Communities of Practice
 
-[Describe the project.]
+The repository and current home for the NYU Communities of Practice website.
