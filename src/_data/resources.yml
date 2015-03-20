@@ -1,12 +1,12 @@
-heading: "Resources"
+heading: "COP 101"
 subheading: "Resources Subheading"
 anchor: resources
 defaultimage: generic-resource.jpg
 items:
-  - title: "Want to start a Community?"
+  - title: "Research and Literature"
     subtitle:
     image: resource1.jpg
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    text: '<ul><li><a href="http://en.wikipedia.org/wiki/Community_of_practice">Actions to Cultivate a Successful Community of practice</a></li><li><a href="http://wenger-trayner.com/theory/">Communities of Practice Introduction</a></li><li><a href="http://herbsleb.org/SCALEpapers/probst-why-2008.pdf">Why Communities Practice Succeed or Fail</a></li><li><a href="https://steinhardt.nyu.edu/scmsAdmin/uploads/006/677/CHAP12HOADLEY.pdf">How Can We Support Communities of Practice</a></li></ul>'
     link: '#'
   - title: "CoP Guidelines"
     subtitle:
@@ -22,4 +22,9 @@ items:
     subtitle:
     image: resource4.jpg
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+    link: '#'
+  - title: "Resources and Tools"
+    subtitle:
+    image: resource4.jpg
+    text: '<ul><li><a href="http://net.educause.edu/ir/library/pdf/nli0531.pdf">Communities of Practice Design Guide</a></li><li><a href="http://www.kpu.ca/sites/default/files/Teaching%20and%20Learning/TD.4.3.6_Cassidy_Communities_of_Practice.pdf">Communities of Practice Checklist for Success</a></li></ul>'
     link: '#'

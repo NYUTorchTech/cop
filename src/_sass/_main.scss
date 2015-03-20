@@ -544,6 +544,8 @@ section span.div-link {
 .timeline .timeline-body>p,
 .timeline .timeline-body>ul {
     margin-bottom: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 @media(min-width:768px) {
@@ -560,7 +562,7 @@ section span.div-link {
         float: left;
         width: 41%;
         padding: 0 20px 20px 30px;
-        text-align: right;
+        // text-align: right;
     }
 
     .timeline>li .timeline-image {
