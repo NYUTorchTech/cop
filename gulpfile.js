@@ -52,6 +52,8 @@ gulp.task('jekyll-rebuild', ['jekyll:dev'], function () {
 // don't end up publishing your drafts or future posts
 gulp.task('jekyll:prod', $.shell.task('jekyll build --config _config.yml,_config.build.yml'));
 
+gulp.task('jekyll:phpscript', $.shell.task('jekyll build --config _config.yml,_config.phpscript.yml'));
+
 // Compiles the SASS files and moves them into the "assets/css" directory
 gulp.task('styles', function () {
   // Looks at the style.scss file for what to include and creates a style.css file
@@ -94,9 +96,12 @@ gulp.task('fonts', function () {
 
 // Copy xml and txt files to the "site" directory
 gulp.task('copy', function () {
-  return gulp.src([path.serve + '/*.txt', path.serve + '/*.xml'])
+  gulp.src([path.serve + '/*.txt', path.serve + '/*.xml'])
     .pipe(gulp.dest(path.site))
-    .pipe($.size({ title: 'xml & txt' }))
+    .pipe($.size({ title: 'xml & txt' }));
+  gulp.src(path.serve + '/mail/**/*.*')
+    .pipe(gulp.dest(path.site + '/mail/'))
+    .pipe($.size({ title: 'php' }));
 });
 
 // Optimizes all the CSS, HTML and concats the JS etc
@@ -225,5 +230,9 @@ gulp.task('build', ['jekyll:prod', 'styles'], function () {});
 // Builds your site with the "build" command and then runs all the optimizations on
 // it and outputs it to "./site"
 gulp.task('publish', ['build'], function () {
+  gulp.start('html', 'copy', 'images', 'fonts');
+});
+
+gulp.task('phpscript', ['jekyll:phpscript', 'styles'], function () {
   gulp.start('html', 'copy', 'images', 'fonts');
 });
