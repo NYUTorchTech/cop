@@ -1,4 +1,7 @@
 <?php
+// CORS
+header("Access-Control-Allow-Origin: http://nyutorchtech.github.io");
+
 // for debugging
 ini_set('display_errors', 1);
 
@@ -42,6 +45,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
     $md .= 'subtitle: '.$ln;
     $md .= 'layout: default'.$ln;
     $md .= 'date: '.$submitted.$ln;
+    $md .= 'contactinfo: '.$groupcontact.$ln;
     $md .= 'image:'.$ln;
     $md .= '  main:'.$ln;
     $md .= '  mainalt:'.$ln;
