@@ -184,10 +184,10 @@ gulp.task('deploy', function () {
   // Load in the variables needed for our Rsync synchronization
   var secret = require('./._rsync.json');
 
-  return gulp.src('site/**')
+  return gulp.src(path.deploy + '/**')
     .pipe($.rsync({
       // This uploads the contents of 'root', instead of the folder
-      root: 'site',
+      root: path.deploy,
       // Credentials ignored by repository
       hostname: secret.hostname,
       username: secret.username,
@@ -199,6 +199,11 @@ gulp.task('deploy', function () {
       // Shows the progress on your files while uploading
       progress: true
   }));
+});
+
+gulp.task('ghpages', function() {
+  return gulp.src('./'+path.deploy+'/**/*')
+    .pipe($.ghPages());
 });
 
 // These tasks will look for files that change while serving and will auto-regenerate or
