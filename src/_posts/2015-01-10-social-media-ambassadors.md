@@ -1,7 +1,7 @@
 ---
 title: Social Media Ambassadors
 subtitle: Subtitle?
-layout: default
+layout: post
 date: 2015-01-10
 image:
   thumb: social-ambassadors.jpg
