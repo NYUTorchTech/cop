@@ -24,8 +24,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
         $body .= $name .': '. $cleanvals[$name] .$ln;
     }
 
-    if($cleanvals['contact1-email']) {
-        $sender = $cleanvals['contact1-email'];
+    if($cleanvals['contact1email']) {
+        $sender = $cleanvals['contact1email'];
     } else {
         $sender = 'noreply@nyu.edu';
     }
