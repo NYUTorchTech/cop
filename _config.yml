@@ -1,10 +1,9 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
-title: NYU Communities of Practice
-description: Bringing people together
+title: NYU Torchtech Communities of Practice
+description: NYU Torchtech Communities of Practice Website
 tagline: Bringing people together
-email: your-email@domain.com
-url: //localhost:3000
+url: localhost:4000
 
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
@@ -13,8 +12,8 @@ destination: serve
 # Same as the title etc for your site but can instead be
 # called by using 'site.author.name' and so on
 author:
-  name: NYU CoP Committee
-  email: jannae@nyu.edu
+  name: CoP Committee
+  email: cop-group@nyu.edu
   bio:
   twitter:
 
@@ -30,9 +29,6 @@ lsi: false
 # Only make the last 10 posts so generating isn't slow
 limit_posts: 10
 
-sass:
-  sass_dir: _sass
-  style: compressed
 
 # Build settings
 markdown: kramdown

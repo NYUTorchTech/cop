@@ -1,0 +1,5 @@
+{
+    "username": "your login name goes here",
+    "hostname": "host name of server goes here",
+    "destination": "directory to deploy to on the server goes here"
+}

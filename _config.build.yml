@@ -2,7 +2,8 @@
 # Overrides these options in _config.yml
 
 # Overrides the default URL, needed for your atom feed and sitemap
-url: //nyutorchtech.github.io/cop/
+url: http://nyutorchtech.github.io
+baseurl: /cop
 
 # Hides your drafts and future posts
 future: false
@@ -11,5 +12,5 @@ show_drafts: false
 # Removes the upper limit for posts generated
 limit_posts: 0
 
-source: src
-destination: site
+source: 'src'
+destination: 'serve'
