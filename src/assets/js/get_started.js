@@ -32,7 +32,7 @@ $(function() {
             var copcontact2phone = $('input#cop-contact2-phone').val();
 
             $.ajax({
-                url: '././mail/get_started.php',
+                url: 'http://cop/jann.ae/mail/get_started.php',
                 type: 'POST',
                 data: {
                     title: copname,
