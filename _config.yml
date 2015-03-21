@@ -51,6 +51,9 @@ picture:
         alt: 'main image'
       source_default:
         width: 600
+    sidebar:
+      source_default:
+        width: 330
     thumb:
       attr:
         alt: 'thumbnail'

@@ -1,4 +1,4 @@
-heading: "COP 101"
+heading: "Resources"
 subheading: "Resources Subheading"
 anchor: resources
 defaultimage: generic-resource.jpg
@@ -8,11 +8,11 @@ items:
     image: resource1.jpg
     text: '<ul><li><a href="http://en.wikipedia.org/wiki/Community_of_practice">Actions to Cultivate a Successful Community of practice</a></li><li><a href="http://wenger-trayner.com/theory/">Communities of Practice Introduction</a></li><li><a href="http://herbsleb.org/SCALEpapers/probst-why-2008.pdf">Why Communities Practice Succeed or Fail</a></li><li><a href="https://steinhardt.nyu.edu/scmsAdmin/uploads/006/677/CHAP12HOADLEY.pdf">How Can We Support Communities of Practice</a></li></ul>'
     link: '#'
-  - title: "CoP Guidelines"
+  - title: "CoP Guidelines for Getting Started"
     subtitle:
     image: resource3.jpg
     text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-    link: '#'
+    link: 'start-a-community'
   - title: "NYU Resources"
     subtitle:
     image: resource2.jpg
