@@ -1,32 +1,61 @@
 ---
 layout: default
 ---
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-            <div class="modal-body">
-                <h2>{{ post.title }}</h2>
-                <hr class="star-primary">
-                {% if post.image.main %}
-                    {% picture main {{ post.image.main }} class="img-responsive img-centered" alt="{{ post.image.mainalt }}" %}
-                {% endif %}
-                {{ post.content }}
-                {% for organizer in post.organizers %}
-                <ul class="list-inline item-details">
-                    {% if organizer.isPrimary %}
-                    <li><strong>Primary:</strong></li>
-                    {% else %}
-                    <li>&nbsp;</li>
+{% include topnav.html %}
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="modal-body">
+                    <h1>{{ page.title }}</h1>
+                    <hr class="star-primary" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="modal-body">
+                    {{ content }}
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="modal-body">
+                    {% if page.contactinfo %}
+                    <p><a href="mailto:{{ page.contactinfo }}" class="btn btn-primary btn-lg btn-block" role="button"><i class="fa fa-envelope"></i> Contact Group</a></p>
                     {% endif %}
-                    <li>Community Organizer:
-                        <strong>{{ organizer.name }}</strong>
-                    </li>
-                    <li>Contact:
-                        <strong>{{ organizer.contact }}</strong>
-                    </li>
-                </ul>
-                {% endfor %}
+                    {% if page.image.main %}<p>
+                        {% picture main {{ page.image.main }} class="img-responsive img-centered" alt="{{ page.image.mainalt }}" %}</p>
+                    {% endif %}
+
+                    {% if page.organizers %}
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Community Organizers</h3>
+                        </div>
+                        <div class="panel-body">
+                        {% for organizer in page.organizers %}
+                        <ul class="list-unstyled item-details">
+                            <li><strong>{{ organizer.name }}</strong></li>
+                            <li><i class="fa fa-envelope"></i><strong>{{ organizer.contact }}</strong>
+                            </li>
+                        </ul>
+                        {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% if page.tags %}
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                            <h3 class="panel-title">Tags</h3>
+                        </div>
+                    <div class="list-group">
+
+                    {% for tag in page.tags %}
+                      <a href="{{ tag }}" class="list-group-item">{{ tag }}</a>
+                    {% endfor %}
+                    </div></div>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>

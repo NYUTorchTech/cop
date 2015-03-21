@@ -1,7 +1,7 @@
 ---
 title: COP Operating Committee
 subtitle: Short description
-layout: default
+layout: post
 date: 2015-01-15
 image:
   main:

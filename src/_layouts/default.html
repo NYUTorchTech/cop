@@ -3,18 +3,11 @@
 
     {% include head.html %}
 
-    <body id="page-top" class="index">
-
-    {% include header.html %}
-
-    {{ content }}
-
-    {% include footer.html %}
-
-    {% javascript vendor %}
-    {% javascript main %}
-
-    {% include stats.html%}
-
+    <body id="page-top" class="index" data-spy="scroll" data-target=".navbar-collapse">
+        {{ content }}
+        {% include footer.html %}
+        {% javascript vendor %}
+        {% javascript main %}
+        {% include stats.html%}
     </body>
 </html>

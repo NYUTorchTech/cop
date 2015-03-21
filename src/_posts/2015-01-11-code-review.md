@@ -1,7 +1,7 @@
 ---
 title: Code Review
 subtitle: Short description
-layout: default
+layout: post
 date: 2015-01-11
 image:
   main: code-review.jpg

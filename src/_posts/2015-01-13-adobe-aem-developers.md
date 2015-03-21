@@ -1,7 +1,7 @@
 ---
 title: Adobe AEM Developers
 subtitle: Short description
-layout: default
+layout: post
 date: 2015-01-13
 image:
   main: aem-group2.jpg
