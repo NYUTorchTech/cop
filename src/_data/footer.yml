@@ -1,0 +1,11 @@
+# Social network links and extra info links for the footer
+social:
+  - title: envelope
+    url: 'mailto:cop-group@nyu.edu'
+  - title: github
+    url: 'https://github.com/NYUTorchTech/cop'
+links:
+  - title: 'Footer Link 1'
+    url: '#'
+  - title: 'Footer Link 2'
+    url: '#'

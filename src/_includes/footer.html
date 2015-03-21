@@ -6,15 +6,17 @@
             </div>
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
-                    {% for network in site.data.social %}
+                    {% for network in site.data.footer.social %}
                     <li><a href="{{ network.url }}"><i class="fa fa-{{ network.title }}"></i></a></li>
                     {% endfor %}
                 </ul>
             </div>
             <div class="col-md-4">
-            <!--
-                <ul class="list-inline quicklinks"><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms of Use</a></li></ul>
-            -->
+                <ul class="list-inline quicklinks">
+                    {% for link in site.data.footer.links %}
+                    <li><a href="{{ link.url }}">{{ link.title }}</li>
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </div>
