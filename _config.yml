@@ -140,7 +140,7 @@ assets:
   # helpers. Instead outputs multiple files in order they are required.
   # Default: false
   #
-  debug: false
+  debug: true
   #
   # Configuration version. Used to force cache invalidation.
   # Default: 1
