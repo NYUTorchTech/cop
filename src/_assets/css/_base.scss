@@ -253,9 +253,13 @@ fieldset[disabled] .btn-xl.active {
         border-radius: 0;
         color: $white;
         background-color: $primary;
-        &:hover, &:focus {
+        &:hover {
             color: $white;
             background-color: $accent;
+        }
+        &:focus {
+            color: $white;
+            background-color: $primary;
         }
     }
 }
@@ -343,7 +347,6 @@ section {
         text-transform: none;
         font-family: $header-font;
         font-size: 16px;
-        font-style: italic;
         font-weight: 400;
     }
     span.div-link {
@@ -378,7 +381,7 @@ section {
                 width: 100%;
                 height: 100%;
                 opacity: 0;
-                background: rgba($primary, .2);
+                background: rgba($primary, .4);
                 -webkit-transition: all ease .5s;
                 -moz-transition: all ease .5s;
                 transition: all ease .5s;
@@ -417,7 +420,6 @@ section {
                 margin: 0;
                 font-family: $header-font;
                 font-size: 16px;
-                font-style: italic;
             }
         }
     }
@@ -654,18 +656,15 @@ section.emailform {
 footer {
     padding: 25px 0;
     text-align: center;
+    text-transform: uppercase;
+    text-transform: none;
+    font-family: $accent-font;
+    font-size: 12px;
+    line-height: 30px;
     span.copyright {
-        text-transform: uppercase;
-        text-transform: none;
-        font-family: $accent-font;
-        line-height: 40px;
     }
     ul.quicklinks {
         margin-bottom: 0;
-        text-transform: uppercase;
-        text-transform: none;
-        font-family: $accent-font;
-        line-height: 40px;
     }
 }
 ul.social-buttons {
