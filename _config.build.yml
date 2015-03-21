@@ -14,3 +14,17 @@ limit_posts: 0
 
 source: 'src'
 destination: 'serve'
+
+#
+# Plugin: jekyll-assets
+#
+assets:
+  #
+  # Pathname of the destination of generated (bundled) assets relative
+  # to the destination of the root.
+  #
+  dirname: cop/assets
+  #
+  # Base URL of assets paths.
+  #
+  baseurl: /cop/assets/
