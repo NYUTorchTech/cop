@@ -1,4 +1,4 @@
-/* Multi-line comment blocks (CSS, SCSS, JavaScript)
+/*  Required vendor libraries
  *= require vendor/jquery
  *= require vendor/bootstrap
  *= require vendor/jquery.easing

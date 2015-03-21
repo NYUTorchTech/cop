@@ -39,8 +39,8 @@ permalink: /:title
 
 # Jekyll Picture Tag Plugin Config
 picture:
-  source: _img-orig
-  output: assets/img/gen
+  source: _img-originals
+  output: assets/img
   markup: picture
   presets:
     main:
@@ -126,7 +126,7 @@ assets:
   cachebust: hard
   #
   # Whenever or not cache compiled assets (disabled by default).
-  # See `Compilation Cache` section of README for details.
+  # See `Compilation Cache` section of readme for details.
   #
   cache: false
   #
