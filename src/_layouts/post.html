@@ -45,15 +45,15 @@ layout: default
                     {% endif %}
                     {% if page.tags > 0 %}
                     <div class="panel panel-default">
-                    <div class="panel-heading">
+                        <div class="panel-heading">
                             <h3 class="panel-title">Tags</h3>
                         </div>
-                    <div class="list-group">
-
-                    {% for tag in page.tags %}
-                      <a href="{{ tag }}" class="list-group-item">{{ tag }}</a>
-                    {% endfor %}
-                    </div></div>
+                        <div class="list-group">
+                        {% for tag in page.tags %}
+                            <a href="{{ tag }}" class="list-group-item">{{ tag }}</a>
+                        {% endfor %}
+                        </div>
+                    </div>
                     {% endif %}
                 </div>
             </div>
