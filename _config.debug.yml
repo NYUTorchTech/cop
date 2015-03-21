@@ -1,0 +1,9 @@
+# Run during the 'gulp build' command
+# Overrides these options in _config.yml
+
+assets:
+  # Does not concatenates files requested by `javascript` and `stylesheet`
+  # helpers. Instead outputs multiple files in order they are required.
+  # Default: false
+  #
+  debug: true

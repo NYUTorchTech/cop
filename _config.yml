@@ -5,6 +5,9 @@ description: NYU Torchtech Communities of Practice Website
 tagline: Bringing people together
 url: localhost:3000
 
+host: localhost
+port: 3000
+
 # Used so Jekyll outputs the site correctly so Gulp can do what it wants
 source: src
 destination: serve
@@ -140,7 +143,7 @@ assets:
   # helpers. Instead outputs multiple files in order they are required.
   # Default: false
   #
-  debug: true
+  debug: false
   #
   # Configuration version. Used to force cache invalidation.
   # Default: 1
