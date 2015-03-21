@@ -2,7 +2,7 @@
 
 # Ignore hidden folders
 # This takes care of .tmp, .sass-cache, and many others
-.*/
+#.*/
 
 # OSX
 ._*
@@ -69,3 +69,4 @@ site
 aws-credentials.json
 rsync-credentials.json
 Gemfile.lock
+.sass-cache
