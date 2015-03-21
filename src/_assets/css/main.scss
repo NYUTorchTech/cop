@@ -7,6 +7,5 @@
 // Partials
 @import 'mixins';
 @import 'variables';
-@import '../_bower_components/font-awesome/scss/font-awesome.scss';
-@import '../_bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss';
-@import 'main';
+@import 'bootstrap';
+@import 'base';
