@@ -212,8 +212,7 @@ fieldset[disabled] .btn-xl.active {
     color: #fff;
 }
 
-.navbar-default .nav li a:hover,
-.navbar-default .nav li a:focus {
+.navbar-default .nav li a:hover {
     outline: 0;
     color: $accent;
 }
@@ -221,11 +220,10 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: $primary;
+    background-color: $secondary;
 }
 
-.navbar-default .navbar-nav>.active>a:hover,
-.navbar-default .navbar-nav>.active>a:focus {
+.navbar-default .navbar-nav>.active>a:hover {
     color: #fff;
     background-color: $secondary;
 }
@@ -272,81 +270,84 @@ header {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-}
 
-header .intro-text {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
+    .intro-text {
+        padding-top: 100px;
+        padding-bottom: 50px;
 
-header .intro-text .intro-lead-in {
-    margin-bottom: 25px;
-    font-family: $accent-font;
-    font-size: 22px;
-    // font-style: italic;
-    line-height: 22px;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
-}
-
-header .intro-text .intro-heading {
-    margin-bottom: 25px;
-    text-transform: uppercase;
-    font-family: $accent-font;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 50px;
-    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
-}
-
-@media(min-width:768px) {
-    header .intro-text {
-        padding-top: 300px;
-        padding-bottom: 200px;
+        @media(min-width:768px) {
+            padding-top: 300px;
+            padding-bottom: 200px;
+        }
     }
 
-    header .intro-text .intro-lead-in {
-        font-size: 40px;
-        line-height: 40px;
+    .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: $accent-font;
+        font-size: 22px;
+        // font-style: italic;
+        line-height: 22px;
+        text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+
+        @media(min-width:768px) {
+            font-size: 40px;
+            line-height: 40px;
+        }
     }
 
-    header .intro-text .intro-heading {
-        margin-bottom: 50px;
-        font-size: 75px;
-        line-height: 75px;
+    .intro-text .intro-heading {
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-family: $accent-font;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 50px;
+        text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.6);
+
+        @media(min-width:768px) {
+            margin-bottom: 50px;
+            font-size: 75px;
+            line-height: 75px;
+        }
     }
+}
+
+.content {
+    margin-top: 100px;
+    padding-bottom:80px;
+    min-height:100%;
+    position:relative;
 }
 
 section {
     padding: 100px 0;
-}
 
-section h2.section-heading {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 40px;
-}
+    h2.section-heading {
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
 
-section h3.section-subheading {
-    margin-bottom: 75px;
-    text-transform: none;
-    font-family: $header-font;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 400;
-}
+    h3.section-subheading {
+        margin-bottom: 75px;
+        text-transform: none;
+        font-family: $header-font;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 400;
+    }
 
-// http://stackoverflow.com/questions/796087/make-a-div-into-a-link
-section span.div-link {
-    position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left: 0;
-    z-index: 1;
-}
+    // http://stackoverflow.com/questions/796087/make-a-div-into-a-link
+    span.div-link {
+        position:absolute;
+        width:100%;
+        height:100%;
+        top:0;
+        left: 0;
+        z-index: 1;
+    }
 
-@media(min-width:768px) {
-    section {
+    @media(min-width:768px) {
         padding: 150px 0;
     }
 }
@@ -359,6 +360,10 @@ section span.div-link {
 .modals .modals-item {
     right: 0;
     margin: 0 0 15px;
+
+    @media(min-width:767px) {
+        margin: 0 0 30px;
+    }
 }
 
 .modals .modals-item .modals-link {
@@ -392,15 +397,13 @@ section span.div-link {
     text-align: center;
     font-size: 20px;
     color: #fff;
-}
 
-.modals .modals-item .modals-link .modals-hover .modals-hover-content i {
-    margin-top: -12px;
-}
-
-.modals .modals-item .modals-link .modals-hover .modals-hover-content h3,
-.modals .modals-item .modals-link .modals-hover .modals-hover-content h4 {
-    margin: 0;
+    i {
+        margin-top: -12px;
+    }
+    h3, h4 {
+        margin: 0;
+    }
 }
 
 .modals .modals-item .modals-caption {
@@ -409,29 +412,24 @@ section span.div-link {
     max-width: 400px;
     text-align: center;
     background-color: #fff;
-}
 
-.modals .modals-item .modals-caption h4 {
-    margin: 0;
-    text-transform: none;
-}
+    h4 {
+        margin: 0;
+        text-transform: none;
+    }
 
-.modals .modals-item .modals-caption p {
-    margin: 0;
-    font-family: $header-font;
-    font-size: 16px;
-    font-style: italic;
+    p {
+        margin: 0;
+        font-family: $header-font;
+        font-size: 16px;
+        font-style: italic;
+    }
 }
 
 .modals * {
     z-index: 2;
 }
 
-@media(min-width:767px) {
-    .modals .modals-item {
-        margin: 0 0 30px;
-    }
-}
 
 .timeline {
     position: relative;
@@ -720,23 +718,22 @@ section.emailform .text-danger {
 }
 
 footer {
-    padding: 25px 0;
     text-align: center;
-}
 
-footer span.copyright {
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: $accent-font;
-    line-height: 40px;
-}
+    span.copyright {
+        text-transform: uppercase;
+        text-transform: none;
+        font-family: $accent-font;
+        line-height: 40px;
+    }
 
-footer ul.quicklinks {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    text-transform: none;
-    font-family: $accent-font;
-    line-height: 40px;
+    ul.quicklinks {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        text-transform: none;
+        font-family: $accent-font;
+        line-height: 40px;
+    }
 }
 
 ul.social-buttons {
