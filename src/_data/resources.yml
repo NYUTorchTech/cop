@@ -2,14 +2,3 @@ heading: "Resources"
 subheading:
 anchor: resources
 defaultimage: generic-resource.jpg
-items:
-  - title: "COP 101"
-    subtitle:
-    image: cop-101.jpg
-    text: ""
-    link: 'resources/cop-101.html'
-  - title: "Information for Getting Started"
-    subtitle:
-    image: getting-started.jpg
-    text: ""
-    link: 'resources/start-a-community.html'

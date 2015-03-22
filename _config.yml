@@ -40,6 +40,11 @@ limit_posts: 10
 markdown: kramdown
 permalink: /:title
 
+# Jekyll Collections
+collections:
+  resources:
+    output: true
+
 # Jekyll Picture Tag Plugin Config
 picture:
   source: _img-originals

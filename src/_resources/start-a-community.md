@@ -1,13 +1,15 @@
 ---
-title: Start a Community
+title: Information for Getting Started
 subtitle: Subtitle?
+description: Description of what this page is for also!
 layout: page
 image:
-  thumb:
+  thumb: getting-started.jpg
   main:
-  mainalt:
+  alt:
 category: resources
 ---
+
 ### What's a "Community of Practice"?
 According to Alice Cassidy, Principal at In View Education and Professional Development:
 
