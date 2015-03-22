@@ -142,7 +142,7 @@ fieldset[disabled] {
 
 .navbar-default {
     border-color: transparent;
-    background-color: rgba($dark,.7);
+    background-color: rgba($dark,.9);
     .navbar-brand {
         font-family: $accent-font;
         color: $white;
@@ -189,6 +189,9 @@ fieldset[disabled] {
             color: $white;
             background-color: $primary;
         }
+    }
+    &.navbar-shrink {
+        background-color: $dark;
     }
 }
 @media (min-width: 768px) {
