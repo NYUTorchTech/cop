@@ -61,70 +61,31 @@ h1, h2, h3, h4, h5, h6, label {
         color: $white;
         background-color: $accent;
     }
+    &:active, &.active {
+        background-image: none;
+    }
+    &.disabled, &[disabled], &.disabled:hover, &[disabled]:hover,
+    &.disabled:focus, &[disabled]:focus, &.disabled:active,
+    &[disabled]:active, &.disabled.active, &[disabled].active {
+        border-color: $primary;
+        background-color: $primary;
+    }
 }
 .open .dropdown-toggle.btn-primary {
     border-color: $primary;
     color: $white;
     background-color: $accent;
-}
-.btn-primary {
-    &:active, &.active {
-        background-image: none;
-    }
-}
-.open .dropdown-toggle.btn-primary {
     background-image: none;
 }
-.btn-primary {
-    &.disabled, &[disabled] {
+
+fieldset[disabled] {
+    .btn-primary, .btn-primary:hover, .btn-primary:focus,
+    .btn-primary:active, .btn-primary.active {
         border-color: $primary;
         background-color: $primary;
     }
 }
-fieldset[disabled] .btn-primary {
-    border-color: $primary;
-    background-color: $primary;
-}
-.btn-primary {
-    &.disabled:hover, &[disabled]:hover {
-        border-color: $primary;
-        background-color: $primary;
-    }
-}
-fieldset[disabled] .btn-primary:hover {
-    border-color: $primary;
-    background-color: $primary;
-}
-.btn-primary {
-    &.disabled:focus, &[disabled]:focus {
-        border-color: $primary;
-        background-color: $primary;
-    }
-}
-fieldset[disabled] .btn-primary:focus {
-    border-color: $primary;
-    background-color: $primary;
-}
-.btn-primary {
-    &.disabled:active, &[disabled]:active {
-        border-color: $primary;
-        background-color: $primary;
-    }
-}
-fieldset[disabled] .btn-primary:active {
-    border-color: $primary;
-    background-color: $primary;
-}
-.btn-primary {
-    &.disabled.active, &[disabled].active {
-        border-color: $primary;
-        background-color: $primary;
-    }
-}
-fieldset[disabled] .btn-primary.active {
-    border-color: $primary;
-    background-color: $primary;
-}
+
 .btn-primary .badge {
     color: $primary;
     background-color: $white;
@@ -144,73 +105,32 @@ fieldset[disabled] .btn-primary.active {
         color: $white;
         background-color: $accent;
     }
+    &:active, &.active {
+        background-image: none;
+    }
+    &.disabled, &[disabled], &.disabled:hover, &[disabled]:hover,
+    &.disabled:focus, &[disabled]:focus, &.disabled:active,
+    &[disabled]:active, &.disabled.active, &[disabled].active {
+        border-color: $primary;
+        background-color: $primary;
+    }
+    .badge {
+        color: $primary;
+        background-color: $white;
+    }
 }
 .open .dropdown-toggle.btn-xl {
     border-color: $primary;
     color: $white;
     background-color: $accent;
-}
-.btn-xl {
-    &:active, &.active {
-        background-image: none;
-    }
-}
-.open .dropdown-toggle.btn-xl {
     background-image: none;
 }
-.btn-xl {
-    &.disabled, &[disabled] {
+
+fieldset[disabled] {
+    .btn-xl, .btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active {
         border-color: $primary;
         background-color: $primary;
     }
-}
-fieldset[disabled] .btn-xl {
-    border-color: $primary;
-    background-color: $primary;
-}
-.btn-xl {
-    &.disabled:hover, &[disabled]:hover {
-        border-color: $primary;
-        background-color: $primary;
-    }
-}
-fieldset[disabled] .btn-xl:hover {
-    border-color: $primary;
-    background-color: $primary;
-}
-.btn-xl {
-    &.disabled:focus, &[disabled]:focus {
-        border-color: $primary;
-        background-color: $primary;
-    }
-}
-fieldset[disabled] .btn-xl:focus {
-    border-color: $primary;
-    background-color: $primary;
-}
-.btn-xl {
-    &.disabled:active, &[disabled]:active {
-        border-color: $primary;
-        background-color: $primary;
-    }
-}
-fieldset[disabled] .btn-xl:active {
-    border-color: $primary;
-    background-color: $primary;
-}
-.btn-xl {
-    &.disabled.active, &[disabled].active {
-        border-color: $primary;
-        background-color: $primary;
-    }
-}
-fieldset[disabled] .btn-xl.active {
-    border-color: $primary;
-    background-color: $primary;
-}
-.btn-xl .badge {
-    color: $primary;
-    background-color: $white;
 }
 
 .content {
