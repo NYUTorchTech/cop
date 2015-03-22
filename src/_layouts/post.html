@@ -27,7 +27,6 @@ layout: default
                         {% picture sidebar {{ page.image.main }} class="img-responsive img-centered" alt="{{ page.image.mainalt }}" %}</p>
                     {% endif %}
 
-                    {% if page.organizers %}
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">Community Organizers</h3>
@@ -35,14 +34,11 @@ layout: default
                         <div class="panel-body">
                         {% for organizer in page.organizers %}
                         <ul class="list-unstyled item-details">
-                            <li><strong>{{ organizer.name }}</strong></li>
-                            <li><i class="fa fa-envelope"></i><strong>{{ organizer.contact }}</strong>
-                            </li>
+                            <li>{% if organizer.contact %}<a href="mailto:{{ organizer.contact }}"><i class="fa fa-envelope"></i></a>  {% endif %}<strong>{{ organizer.name }}</strong></li>
                         </ul>
                         {% endfor %}
                         </div>
                     </div>
-                    {% endif %}
                     {% if page.tags > 0 %}
                     <div class="panel panel-default">
                         <div class="panel-heading">
