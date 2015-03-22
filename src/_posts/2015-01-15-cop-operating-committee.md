@@ -3,18 +3,29 @@ title: COP Operating Committee
 subtitle: Short description
 layout: post
 date: 2015-01-15
+contactinfo: hi-group@nyu.edu
+organized-date: April 2011
 image:
   main:
   mainalt: COP Operating Committee
   thumb:
-organized-date: April 2011
+members: 10-20
+meeting-style:
+  inperson: true
+  remote: true
+  frequency: Weekly
 organizers:
-- name: John Snow
-  contact:
+- name: Joe Schmo
+  email: joe@schmo.com
+  phone:
+  okContact: true
   isPrimary: true
-- name: Someone Else
-  contact:
+- name: Test Secondary
+  email: test@email.edu
+  phone:
+  okContact: true
   isPrimary: false
+category: Committee
 tags: []
 ---
 

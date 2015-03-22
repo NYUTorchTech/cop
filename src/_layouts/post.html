@@ -6,52 +6,63 @@ layout: default
     <div class="container">
         <div class="row">
             <div class="col-lg-8">
-                <div class="modal-body">
-                    <h1>{{ page.title }}</h1>
-                    <hr class="star-primary" />
-                </div>
+                <h1>{{ page.title }}</h1>
+                <hr class="star-primary" />
             </div>
+
         </div>
         <div class="row">
             <div class="col-lg-8">
-                <div class="modal-body">
-                    {{ content }}
-                </div>
+                {{ content }}
             </div>
             <div class="col-lg-4">
-                <div class="modal-body">
-                    {% if page.contactinfo %}
-                    <p><a href="mailto:{{ page.contactinfo }}" class="btn btn-primary btn-lg btn-block" role="button"><i class="fa fa-envelope"></i> Contact Group</a></p>
-                    {% endif %}
-                    {% if page.image.main %}<p>
-                        {% picture sidebar {{ page.image.main }} class="img-responsive img-centered" alt="{{ page.image.mainalt }}" %}</p>
-                    {% endif %}
-
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Community Organizers</h3>
-                        </div>
-                        <div class="panel-body">
-                        {% for organizer in page.organizers %}
-                        <ul class="list-unstyled item-details">
-                            <li>{% if organizer.contact %}<a href="mailto:{{ organizer.contact }}"><i class="fa fa-envelope"></i></a>  {% endif %}<strong>{{ organizer.name }}</strong></li>
-                        </ul>
-                        {% endfor %}
-                        </div>
-                    </div>
-                    {% if page.tags > 0 %}
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Tags</h3>
-                        </div>
-                        <div class="list-group">
-                        {% for tag in page.tags %}
-                            <a href="{{ tag }}" class="list-group-item">{{ tag }}</a>
-                        {% endfor %}
-                        </div>
-                    </div>
-                    {% endif %}
+                {% if page.image.main %}
+                <div class="panel panel-default">
+                    {% picture sidebar {{ page.image.main }} class="img-responsive img-thumbnail img-centered" %}
                 </div>
+                {% endif %}
+                {% if page.contactinfo %}
+                    <p><a href="mailto:{{ page.contactinfo }}" class="btn btn-primary btn-lg btn-block" role="button"><i class="fa fa-envelope"></i> Contact Group</a></p>
+                {% endif %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Meeting Information</h3>
+                    </div>
+                    <div class="panel-body">
+                    {% if page.members %}<p><strong>Members:</strong> {{ page.members }}</p>{% endif %}
+                    {% if page.meeting-style.inperson or page.meeting-style.remote %}
+                        <p><strong>Meeting Style:</strong></p>
+                        <ul>{% if page.meeting-style.inperson %}<li>In Person</li>{% endif %}{% if page.meeting-style.remote %}<li>Remote</li>{% endif %}</ul>
+                    {% endif %}
+                    {% if page.meeting-style.frequency %}
+                        <p><strong>Frequency:</strong> {{ page.meeting-style.frequency }}</p>
+                    {% endif %}
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Community Organizers</h3>
+                    </div>
+                    <div class="panel-body">
+                    {% for organizer in page.organizers %}
+                    <ul class="list-unstyled item-details">
+                        <li>{% if organizer.okContact %}<a href="mailto:{{ organizer.email }}"><i class="fa fa-envelope"></i></a>  {% endif %}<strong>{{ organizer.name }}</strong> {% if organizer.isPrimary %}*{% endif %}</li>
+                    </ul>
+                    {% endfor %}
+                    </div>
+                </div>
+                {% if page.tags.size > 0 %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Tags</h3>
+                    </div>
+                    <div class="list-group">
+                    {% for tag in page.tags %}
+                        <a href="#" class="list-group-item">{{ tag }}</a>
+                    {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>
