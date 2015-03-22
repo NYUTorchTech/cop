@@ -47,7 +47,7 @@ h1, h2, h3, h4, h5, h6, label {
     background-color: #f7f7f7;
 }
 .bg-darkest-gray {
-    background-color: #222;
+    background-color: $dark;
 }
 .btn-primary {
     border-color: $primary;
@@ -222,7 +222,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: rgba($dark,.7);
     .navbar-brand {
         font-family: $accent-font;
         color: $white;
@@ -289,7 +289,7 @@ fieldset[disabled] .btn-xl.active {
         }
         &.navbar-shrink {
             padding: 10px 0;
-            background-color: #222;
+            background-color: $dark;
             .navbar-brand {
                 font-size: 1.5em;
             }
@@ -686,7 +686,7 @@ ul.social-buttons {
         line-height: 40px;
         outline: 0;
         color: $white;
-        background-color: #222;
+        background-color: $dark;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
@@ -747,7 +747,7 @@ ul.social-buttons {
             width: 1px;
             height: 75px;
             margin-left: 35px;
-            background-color: #222;
+            background-color: $dark;
             -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             transform: rotate(45deg);
@@ -755,7 +755,7 @@ ul.social-buttons {
                 z-index: 1052;
                 width: 1px;
                 height: 75px;
-                background-color: #222;
+                background-color: $dark;
                 -webkit-transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 transform: rotate(90deg);
