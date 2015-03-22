@@ -1,30 +1,15 @@
 heading: "Resources"
-subheading: "Resources Subheading"
+subheading:
 anchor: resources
 defaultimage: generic-resource.jpg
 items:
   - title: "COP 101"
     subtitle:
-    image: cop-101jpg
-    text: ''
-    link: '#'
-  - title: "CoP Guidelines for Getting Started"
+    image: cop-101.jpg
+    text: ""
+    link: 'resources/cop-101.html'
+  - title: "Information for Getting Started"
     subtitle:
-    image: resource3.jpg
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-    link: 'start-a-community'
-  - title: "NYU Resources"
-    subtitle:
-    image: resource2.jpg
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-    link: '#'
-  - title: "Checklist"
-    subtitle:
-    image: resource4.jpg
-    text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-    link: '#'
-  - title: "Resources and Tools"
-    subtitle:
-    image: resource4.jpg
-    text: '<ul><li><a href="http://net.educause.edu/ir/library/pdf/nli0531.pdf">Communities of Practice Design Guide</a></li><li><a href="http://www.kpu.ca/sites/default/files/Teaching%20and%20Learning/TD.4.3.6_Cassidy_Communities_of_Practice.pdf">Communities of Practice Checklist for Success</a></li></ul>'
-    link: '#'
+    image: getting-started.jpg
+    text: ""
+    link: 'resources/start-a-community.html'

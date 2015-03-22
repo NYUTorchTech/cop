@@ -1,6 +1,6 @@
 ---
 title: Social Media Ambassadors
-subtitle: Subtitle?
+subtitle:
 layout: post
 date: 2015-01-10
 image:
@@ -12,7 +12,7 @@ organizers:
 - name: Chris Barrows
   contact: <a href="mailto:chris.barrows@nyu.edu">chris.barrows@nyu.edu</a>
   isPrimary: true
-- name: Someone Else
+- name:
   contact:
   isPrimary: false
 category: Social Media

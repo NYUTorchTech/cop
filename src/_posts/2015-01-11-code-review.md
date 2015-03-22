@@ -1,6 +1,6 @@
 ---
 title: Code Review
-subtitle: Short description
+subtitle:
 layout: post
 date: 2015-01-11
 image:
@@ -9,14 +9,12 @@ image:
   thumb: code-review.jpg
 organized-date: April 2011
 organizers:
-- name: Zach Elliot
-  contact:
+- name: Joe Schmo
+  contact: joe@schmo.com
   isPrimary: true
-- name: Jannae Jacks
+- name: Joe's Friend
   contact:
   isPrimary: false
 category: Code
 tags: []
 ---
-
-Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
