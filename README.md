@@ -13,15 +13,15 @@ To get started, clone this repository's `master` branch
 
     git clone https://github.com/NYUTorchTech/cop.git
 
-Create a branch for your edits (never do work on `master`! :) ):
-
-    git checkout -b myname-myedits
-
 From the new `cop` directory, run:
 
     bundle install
     npm install
     bower install
+
+Create a branch for your edits (never do work on `master`! :) ):
+
+    git checkout -b myname-myedits
 
 Open in your favorite editor and code away!
 

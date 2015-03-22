@@ -19,7 +19,8 @@ var php = require('gulp-connect-php');
 var path = {
   src   : 'src',
   serve : 'serve',
-  site  : 'site'
+  site  : 'site',
+  assets: '_assets'
 };
 
 // Deletes the directory that is used to serve the site during development
@@ -34,17 +35,9 @@ gulp.task('jekyll:build', ['clean:dev'], $.shell.task('jekyll build'));
 gulp.task('jekyll:rebuild', ['jekyll:build'], function () { reload; });
 gulp.task('jekyll:serve', ['clean:dev'], $.shell.task('jekyll serve'));
 
-gulp.task('jekyll:debug', ['clean:dev', 'clean:prod'], $.shell.task('jekyll serve --verbose --config _config.yml,_config.debug.yml'));
+gulp.task('jekyll:debug', ['clean:dev', 'clean:prod'], $.shell.task('jekyll serve --trace --verbose --config _config.yml,_config.debug.yml'));
 
 gulp.task('jekyll:prod', ['clean:prod'], $.shell.task('jekyll build --config _config.yml,_config.build.yml'));
-
-// Run JS Lint against your JS
-gulp.task('jslint', function () {
-  gulp.src('./' + path.serve + '/' + path.js + '/*.js')
-    // Checks your JS code quality against your .jshintrc file
-    .pipe($.jshint('.jshintrc'))
-    .pipe($.jshint.reporter());
-});
 
 // Task to upload your site via Rsync to your server
 gulp.task('rsync', function () {
@@ -69,7 +62,7 @@ gulp.task('rsync', function () {
 });
 
 // Task to upload your site to your personal GH Pages repo
-gulp.task('deploy', function () {
+gulp.task('deploy', ['publish'], function () {
   // Deploys your optimized site, you can change the settings in the html task if you want to
   return gulp.src('./' + path.site + '/**/*')
     .pipe($.ghPages());
@@ -120,7 +113,7 @@ gulp.task('serve:prod', function () {
 gulp.task('default', ['serve:dev', 'watch']);
 
 // Checks your CSS, JS and Jekyll for errors
-gulp.task('check', ['jslint', 'doctor'], function () {
+gulp.task('check', ['doctor'], function () {
   // Better hope nothing is wrong.
 });
 
@@ -130,5 +123,5 @@ gulp.task('build', ['jekyll:prod'], function () {});
 // Builds your site with the "build" command and then runs all the optimizations on
 // it and outputs it to "./site"
 gulp.task('publish', ['build'], function () {
-  gulp.start('html', 'copy', 'images', 'fonts');
+  // gulp.start('html', 'copy', 'images', 'fonts');
 });
