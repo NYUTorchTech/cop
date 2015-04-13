@@ -1,6 +1,6 @@
 # Title, decription, tagline and URL for your site
 # Can be used in your theme by calling 'site.title' and so on
-title: NYU Torchtech Communities of Practice
+title: NYU Torchtech CoP
 description: NYU Torchtech Communities of Practice Website
 tagline: Bringing people together
 url: localhost:3000

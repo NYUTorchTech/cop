@@ -1,15 +1,15 @@
 heading: "Get Involved"
-subheading: This could be the purpose statement. The heading also doesn't have to be "Get involved."
+subheading: The Communities of Practice Program creates a platform for encouraging and empowering professionals across NYU to network and collaborate with each other based on common interests and goals.
 anchor: getinvolved
 sections:
   - title: "Join a Community"
     icon: group
     text: "Browse and join already existing communities."
     link: '#join'
-  - title: "Start a Community"
+  - title: "Register a Community"
     icon: thumbs-up
     text: "Register your community to appear on this site."
-    link: '#start'
+    link: '#register'
   - title: "Find a Resource"
     icon: question
     text: "Guidelines for starting a community, and learn more about tools available to you"

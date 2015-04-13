@@ -30,3 +30,11 @@ tags: ['Social Media']
 ---
 
 A group for NYU employees who manage social media on behalf of a campus entity. This group facilitates knowledge, awareness, and best practices regarding social media at NYU.
+
+##Planned Goal/Outcome
+
+We have goals!
+
+##Processes and Practices
+
+And Processes and Practices
