@@ -1,6 +1,6 @@
 heading: CoP Operating Committee
 subheading: We put this together!
-subtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
+subtext:
 anchor: about
 defaultimage: generic-team.jpg
 members:
@@ -16,12 +16,6 @@ members:
     social:
       - title: envelope
         url: "mailto:cb170@nyu.edu"
-      - title: facebook
-        url: #
-      - title: twitter
-        url: #
-      - title: linkedin
-        url: #
   - name: Kevin McCullough
     image:
     role: Community Intake
@@ -35,9 +29,7 @@ members:
       - title: envelope
         url: "mailto:jannae@nyu.edu"
       - title: github
-        url: #
-      - title: twitter
-        url: #
+        url: https://github.com/jannae
   - name: Razi Ahmad
     image:
     role: Google Groups Technical Lead
@@ -50,27 +42,15 @@ members:
     social:
       - title: envelope
         url: "mailto:lec321@nyu.edu"
-      - title: facebook
-        url: #
-      - title: google-plus
-        url: #
   - name: Kristina Zacharias
     image:
     role: Committee Support and Advisement
     social:
       - title: envelope
         url: "mailto:kristina.zacharias@nyu.edu"
-      - title: facebook
-        url: #
-      - title: google-plus
-        url: #
   - name: Vincent Hou
     image:
     role: Committee Support and Advisement
     social:
       - title: envelope
         url: "mailto:vh265@nyu.edu"
-      - title: facebook
-        url: #
-      - title: google-plus
-        url: #

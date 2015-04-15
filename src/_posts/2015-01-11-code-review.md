@@ -3,7 +3,8 @@ title: Code Review
 subtitle:
 layout: post
 date: 2015-01-10
-contactinfo: hi-group@nyu.edu
+infocontact:
+groupalias: 
 organized-date: April 2011
 image:
   main: code-review.jpg
@@ -15,15 +16,15 @@ meeting-style:
   remote: true
   frequency: Weekly
 organizers:
-- name: Joe Schmo
-  email: joe@schmo.com
-  phone:
-  okContact: true
+- name: 
+  email: 
+  okname: false
+  okemail: false
   isPrimary: true
-- name: Test Secondary
-  email: test@email.edu
-  phone:
-  okContact: true
+- name: 
+  email: 
+  okname: false
+  okemail: false
   isPrimary: false
 category: Code
 tags: ['Code','Javascript','Python','Java','Ruby','DevOps']

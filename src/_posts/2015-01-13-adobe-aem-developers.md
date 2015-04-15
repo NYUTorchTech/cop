@@ -1,9 +1,10 @@
 ---
 title: Adobe AEM Developers
-subtitle: Short description
+subtitle: 
 layout: post
 date: 2015-01-13
-contactinfo: hi-group@nyu.edu
+infocontact:
+groupalias: 
 image:
   main: aem-group2.jpg
   mainalt: Adobe AEM Developers Group
@@ -15,18 +16,17 @@ meeting-style:
   remote: true
   frequency: Weekly
 organizers:
-- name: John Snow
-  email: test@email.edu
-  phone:
-  okContact: true
+- name: Jannae Jacks
+  email: jannae@nyu.edu
+  okname: true
+  okemail: true
   isPrimary: true
-- name: Test Secondary
-  email: test@email.edu
-  phone:
-  okContact: true
+- name: 
+  email: 
+  okname: false
+  okemail: false
   isPrimary: false
 category: "Developers"
 tags: ['Development','CMS','Web','Adobe Experience Manager','Java','DevOps']
 ---
 
-Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.

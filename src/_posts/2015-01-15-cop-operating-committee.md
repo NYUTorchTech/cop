@@ -1,9 +1,10 @@
 ---
 title: COP Operating Committee
-subtitle: Short description
+subtitle: 
 layout: post
 date: 2015-01-15
-contactinfo: hi-group@nyu.edu
+infocontact:
+groupalias: 
 organized-date: April 2011
 image:
   main:
@@ -15,18 +16,16 @@ meeting-style:
   remote: true
   frequency: Weekly
 organizers:
-- name: Joe Schmo
-  email: joe@schmo.com
-  phone:
-  okContact: true
+- name: 
+  email: 
+  okname: false
+  okemail: false
   isPrimary: true
-- name: Test Secondary
-  email: test@email.edu
-  phone:
-  okContact: true
+- name: 
+  email: 
+  okname: false
+  okemail: false
   isPrimary: false
 category: Committee
 tags: []
 ---
-
-Lorem ipsum dolor sit amet, usu cu alterum nominavi lobortis. At duo novum diceret. Tantas apeirian vix et, usu sanctus postulant inciderint ut, populo diceret necessitatibus in vim. Cu eum dicam feugiat noluisse.
