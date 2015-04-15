@@ -2,3 +2,16 @@ heading: "Resources"
 subheading:
 anchor: resources
 defaultimage: generic-resource.jpg
+sidebar:
+  - sectiontitle: "NYU Resources"
+    sectionlinks:
+      - title: 'Wikis'
+        url: 'https://www.nyu.edu/its/wiki/'
+      - title: 'Blogs'
+        url: 'https://www.nyu.edu/its/blogs/'
+      - title: 'Torch Tech'
+        url: 'http://torchtech.law.nyu.edu/'
+      - title: 'NYU Meetups'
+        url: 'http://nyu.meetup.com/'
+      - title: 'IT Connect'
+        url: 'https://wp.nyu.edu/connect/'

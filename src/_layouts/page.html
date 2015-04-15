@@ -14,17 +14,33 @@ layout: default
             <div class="col-lg-8">
             {{ content }}
             </div>
-            <!--
-            {% if page.image.thumb %}
             <div class="col-md-3 col-md-offset-1">
+                {% if page.image.thumb %}
                 <ul class="timeline"><li>
                     <div class="timeline-image">
                         {% picture resource {{ page.image.thumb }} class="img-circle img-responsive" alt="{{ page.title }}" %}
                     </div>
                 </li></ul><hr class="star-primary" />
+                {% endif %}
+                {% if site.data.resources.sidebar.size > 0 %}
+                {% for section in site.data.resources.sidebar %}
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">{{ section.sectiontitle }}</h4>
+                    </div>
+                    <div class="list-group">
+                    {% for link in section.sectionlinks %}
+                        <a href="{{ link.url }}" target="_new" class="list-group-item">
+                            <h5 class="list-group-item-heading">{{ link.title }}</h5>
+                            {% if link.text.size > 0 %}<p class="list-group-item-text">{{ link.text }}</p>{% endif %}
+                        </a>
+                    {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+                {% endif %}
             </div>
-            {% endif %}
-            -->
+
         </div>
     </div>
 </div>
