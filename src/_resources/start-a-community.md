@@ -1,7 +1,7 @@
 ---
 title: Information for Getting Started
-subtitle: Subtitle?
-description: Description of what this page is for also!
+subtitle: 
+description: 
 layout: page
 image:
   thumb: getting-started.jpg
@@ -10,28 +10,36 @@ image:
 category: resources
 ---
 
-### What's a "Community of Practice"?
+## What's a "Community of Practice"?
 
 A Community of Practice (CoP) is an informal network of people who share a common interest. It can include as few as five people, and diversity is encouraged - i.e., membership should consist of individuals from across different units from the University. A CoP has has a targeted scope and provides learning value to its members with no predefined lifetime for communities of practice.
 
-### What else should I know about communities of practice?
+## How Do I Get Started?
 
-There are several additional things you should consider before deciding to create a new community of practice:
+### I have an idea, what next?
 
-* Is there another community of practice at NYU that matches what you're trying to establish? If so, consider joining and contributing to the existing community rather than attempt to reinvent the wheel.
-* Communities of Practice continue to exist as long as they continue to provide value to their members. If you start one up and it winds up fizzling, don't take it personally or lose heart.
-* Consider gathering a "coalition of the willing" prior to establishing your community of practice. These will be the diehard members of the community that can help shoulder some of the heavy lifting involved in starting up and maintaining a community of practice.
-* Starting up and maintaining a community of practice will require a fairly significant time commitment from you, even if you've got a group of rock stars to help manage the community. Seriously consider if you've got the time to commit to this endeavor.
-* Think about how frequently members will meet. There is no one-size-fits-all answer. Each community of practice is different. Some will undoubtedly meet more frequently than others. Think about what makes sense for your community.
-* Figure out the right communication channels for your community. At the most basic level, you'll most likely want to create a Google Group to communicate via email. Other forms of disseminating information (e.g., a website, a blog, etc.) will require a certain time commitment and skill set to be maintained properly.
-* Last, but not least, have fun! A community of practice can provide a tremendous amount of value to its members. It also provides a great networking opportunity - you can get to know folks from across the University (perhaps even the GNU) that you normally might not get to meet or interact with during the course of your daily activities.
+* Start talking to people and taking names
+* Email <a href="mailto:cop-group@nyu.edu">cop-group@nyu.edu</a> to see if we know of others that share your interests
+* Check <a href="/resources/cop-101.html">CoP 101</a> for ideas and best practices
 
-### Thanks. How do I get started?
+### I want to join an existing community
 
-The first step is to [register your community](/#start) to appear on this website.
+* Read over the <a href="/#join">list of existing communities</a> for one that matches your interests
+* Reach out to CoP contact 
 
-Once your application is received, you will be invited to meet with the committee to discuss your plans for the community in detail.
+### I want to register a new community
 
-### Okay. I'd like to advertise the new Community of Practice - how can I do so?
+* Complete the registration form
+* Check <a href="/resources/cop-101.html">CoP 101</a> for ideas and best practices
 
-There's a directory of communities of practice on this site where your community will be listed. You can also invite folks to join your community through the message board on this site.
+## Helpful Hints to Get You Going...
+
+There are several additional things you should consider:
+
+* Is there another CoP that matches what you’re trying to establish? If so, consider joining and contributing to the existing community rather than reinventing the wheel.
+* Consider gathering a “coalition of the willing” prior to establishing your CoP.
+* Plan ahead - starting up and maintaining a CoP will require a fairly significant time commitment. Seriously consider if you’ve got the time to commit to this endeavor.
+* Think about how frequently members will meet. Each CoP is different. Think about what makes sense for your community.
+* Determine the right communication channels for your community. This will likely include the creation of a <a href="//www.nyu.edu/its/groups/">Google Group</a> and may also include blogs, wikis or social media. 
+* Have fun! CoP’s can provide a tremendous amount of value to its members as well as great networking opportunities with your fellow NYU colleagues. If you start one up and it winds up fizzling, don’t take it personally or lose heart.
+* Contact <a href="mailto:cop-group@nyu.edu">cop-group@nyu.edu</a> for guidance, questions, suggestions. 
