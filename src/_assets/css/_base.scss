@@ -142,10 +142,16 @@ fieldset[disabled] {
 
 .navbar-default {
     border-color: transparent;
-    background-color: rgba($dark,.9);
+    background-color: rgba($navbar,.9);
     .navbar-brand {
-        font-family: $accent-font;
+        font-family: $logo-font;
         color: $white;
+        background: url($torchtechlogo) no-repeat;
+        background-size: 150px;
+        position: relative;
+        text-indent: 70px;
+        padding-top: 30px;
+        z-index: 1000;
         &:hover, &:focus, &:active, &.active {
             color: $accent;
         }
@@ -191,7 +197,7 @@ fieldset[disabled] {
         }
     }
     &.navbar-shrink {
-        background-color: $dark;
+        background-color: $navbar;
     }
 }
 @media (min-width: 768px) {
@@ -202,7 +208,7 @@ fieldset[disabled] {
         -moz-transition: padding .3s;
         transition: padding .3s;
         .navbar-brand {
-            font-size: 2em;
+            font-size: 1.8em;
             -webkit-transition: all .3s;
             -moz-transition: all .3s;
             transition: all .3s;
@@ -212,7 +218,7 @@ fieldset[disabled] {
         }
         &.navbar-shrink {
             padding: 10px 0;
-            background-color: $dark;
+            background-color: $navbar;
             .navbar-brand {
                 font-size: 1.5em;
             }

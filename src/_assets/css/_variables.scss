@@ -4,20 +4,21 @@
 // Typography variables
 $base-font          : "Helvetica Neue", Helvetica, Arial, sans-serif;
 $body-font          : "Roboto Slab", $base-font;
-$accent-font        : Montserrat, $base-font;
+$accent-font        : "Montserrat", $base-font;
 $header-font        : "Droid Serif", $base-font;
+$logo-font          : "PT Sans", verdana, $base-font;
 
 
 // Color variables
 $primary            : #57068C;
 $accent             : #8900e1;
 $accent2            : #01897B;
-$secondary          : #330662;
-$secondary-dark     : #333;
 $dark               : #222;
+$navbar             : #999;
 $white              : #fff;
 
 // Images
 // Using jekyll-assets: (http://guides.rubyonrails.org/asset_pipeline.html)
 $headerback         : asset-path('header-bg.jpg');
 $contactback        : asset-path('map-image.png');
+$torchtechlogo      : asset-path('torchtech-logo.png');
