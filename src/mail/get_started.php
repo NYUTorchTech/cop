@@ -1,6 +1,6 @@
 <?php
 // CORS
-header("Access-Control-Allow-Origin: http://nyutorchtech.github.io");
+header("Access-Control-Allow-Origin: https://nyutorchtech.github.io");
 
 // for debugging
 ini_set('display_errors', 1);
@@ -42,10 +42,12 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
     $md  = '**Begin Markdown for COP Page**'.$ln2;
     $md .= '---'.$ln;
     $md .= 'title: '.$cleanvals['title'].$ln;
-    $md .= 'subtitle: '.$ln;
+    $md .= 'subtitle: '.$cleanvals['subtext'].$ln;
     $md .= 'layout: default'.$ln;
     $md .= 'date: '.$submitted.$ln;
-    $md .= 'contactinfo: '.$cleanvals['groupcontact'].$ln;
+    $md .= 'infocontact: '.$cleanvals['infocontact'].$ln;
+    $md .= 'groupalias: '.$cleanvals['groupalias'].$ln;
+    $md .= 'imageurl: '.$cleanvals['imageurl'].$ln;
     $md .= 'image:'.$ln;
     $md .= '  main:'.$ln;
     $md .= '  mainalt:'.$ln;
@@ -59,11 +61,13 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
     $md .= 'organizers:'.$ln;
     $md .= '- name: '.$cleanvals['contact1name'].$ln;
     $md .= '  contact: '.$cleanvals['contact1email'].$ln;
-    $md .= '  phone: '.$cleanvals['contact1phone'].$ln;
+    $md .= '  okname: '.$cleanvals['contact1okname'].$ln;
+    $md .= '  okemail: '.$cleanvals['contact1okemail'].$ln;
     $md .= '  isPrimary: true'.$ln;
     $md .= '- name: '.$cleanvals['contact2name'].$ln;
     $md .= '  contact: '.$cleanvals['contact2email'].$ln;
-    $md .= '  phone: '.$cleanvals['contact2phone'].$ln;
+    $md .= '  okname: '.$cleanvals['contact1okname'].$ln;
+    $md .= '  okemail: '.$cleanvals['contact1okemail'].$ln;
     $md .= '  isPrimary: false'.$ln;
     $md .= 'tags: []'.$ln;
     $md .= '---'.$ln2;
