@@ -2,7 +2,8 @@
 # Overrides these options in _config.yml
 
 # Overrides the default URL, needed for your atom feed and sitemap
-url: http://nyutorchtech.github.io
+url: https://nyutorchtech.github.io
+enforce_ssl: nyutorchtech.github.io
 baseurl: /cop
 
 # Hides your drafts and future posts
