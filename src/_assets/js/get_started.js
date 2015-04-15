@@ -62,7 +62,6 @@ $(function() {
                     contact1okemail: copcontact1okemail,
                     contact2name: copcontact2name,
                     contact2email: copcontact2email,
-                    contact2okname: copcontact2phone,
                     contact2okname: copcontact2okname,
                     contact2okemail: copcontact2okemail
                 },
