@@ -64,6 +64,7 @@ _bower_components
 # Output folders
 serve
 site
+.publish
 
 # hide the AWS and Rsync credentials file
 aws-credentials.json
