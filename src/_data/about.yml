@@ -11,11 +11,18 @@ members:
       - title: envelope
         url: "mailto:nelya.zonis@nyu.edu"
   - name: Chris Barrows
-    image:
+    image: chris-barrows.jpg
     role: Lead Marketer
+    gravatar: cb170@nyu.edu
     social:
       - title: envelope
         url: "mailto:cb170@nyu.edu"
+      - title: twitter
+        url: "https://twitter.com/CBarrows"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/cbarrows"
+      - title: external-link-square
+        url: "http://www.chrisgbarrows.com"
   - name: Kevin McCullough
     image:
     role: Community Intake
@@ -23,13 +30,15 @@ members:
       - title: envelope
         url: "mailto:km2429@nyu.edu"
   - name: Jannae Jacks
-    image:
+    image: jannae-jacks.jpg
     role: Website Technical Lead
     social:
       - title: envelope
         url: "mailto:jannae@nyu.edu"
       - title: github
         url: https://github.com/jannae
+      - title: external-link-square
+        url: "http://jann.ae"
   - name: Razi Ahmad
     image:
     role: Google Groups Technical Lead

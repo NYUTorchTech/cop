@@ -72,8 +72,8 @@ picture:
         height: 200
     profilepic:
       source_default:
-        width: 225
-        height: 225
+        width: 200
+        height: 200
 
 #
 # Plugin: jekyll-assets
