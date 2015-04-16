@@ -27,7 +27,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
     if($cleanvals['contact1email']) {
         $sender = $cleanvals['contact1email'];
     } else {
-        $sender = 'noreply@nyu.edu';
+        $sender = 'cop-groupy@nyu.edu';
     }
 
     $to = 'jannae@nyu.edu';
@@ -39,7 +39,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
     date_default_timezone_set('America/New_York');
     $submitted = date('Y-m-d H:i:s');
 
-    $md  = '**Begin Markdown for COP Page**'.$ln2;
+    $md  = '**Begin Markdown for creating the community page**'.$ln2;
     $md .= '---'.$ln;
     $md .= 'title: '.$cleanvals['title'].$ln;
     $md .= 'subtitle: '.$cleanvals['subtext'].$ln;
