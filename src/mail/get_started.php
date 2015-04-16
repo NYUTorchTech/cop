@@ -27,10 +27,10 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
     if($cleanvals['contact1email']) {
         $sender = $cleanvals['contact1email'];
     } else {
-        $sender = 'cop-groupy@nyu.edu';
+        $sender = 'cop-group@nyu.edu';
     }
 
-    $to = 'jannae@nyu.edu';
+    $to = 'cop-group@nyu.edu';
     $subj = 'New CoP Submitted for '.$cleanvals['title'];
 
     $headers = 'From: '. $sender.$ln;
