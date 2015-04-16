@@ -13,7 +13,7 @@ function clean($string) {
 }
 
 // let's not have bots accessing this form willy-nilly
-if( $_SERVER['REQUEST_METHOD'] == 'POST') {
+if( $_SERVER['REQUEST_METHOD'] === 'POST') {
     $ln = PHP_EOL;
     $ln2 = PHP_EOL.PHP_EOL;
 
@@ -21,16 +21,20 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 
     foreach($_POST as $name => $value) {
         $cleanvals[$name] = htmlspecialchars($value);
-        $body .= $name .': '. $cleanvals[$name] .$ln;
+        //$body .= $name .': '. $cleanvals[$name] .$ln;
     }
 
+/*
     if($cleanvals['contact1email']) {
         $sender = $cleanvals['contact1email'];
     } else {
-        $sender = 'cop-group@nyu.edu';
+        $sender = 'jannae@nyu.edu';
     }
+*/
 
-    $to = 'cop-group@nyu.edu';
+    $sender = 'jannae@nyu.edu';
+
+    $to = 'jannae@nyu.edu';
     $subj = 'New CoP Submitted for '.$cleanvals['title'];
 
     $headers = 'From: '. $sender.$ln;
