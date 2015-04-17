@@ -7,9 +7,9 @@
                     <h3 class="section-subheading text-muted">{{ site.data.communities.subheading }}</h3>
                 </div>
             </div>
-            <div class="row">
             {% for post in site.posts %}
-                <div class="col-md-4 col-sm-6 communities-item">
+            {% cycle '<div class="row">', '', '' %}
+                <div class="col-md-4 col-sm-4 communities-item">
                     <a href="{{ site.baseurl }}{{ post.url }}" class="communities-link">
                         <div class="communities-hover">
                             <div class="communities-hover-content">
@@ -27,6 +27,7 @@
                         <p class="text-muted">{{ post.subtitle }}</p>
                     </div>
                 </div>
+            {% cycle '', '', '</div>' %}
             {% endfor %}
             </div>
             <div class="row">
