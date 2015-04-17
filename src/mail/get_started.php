@@ -47,10 +47,11 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST') {
     $md .= '---'.$ln;
     $md .= 'title: '.$cleanvals['title'].$ln;
     $md .= 'subtitle: '.$cleanvals['subtext'].$ln;
-    $md .= 'layout: default'.$ln;
+    $md .= 'layout: post'.$ln;
     $md .= 'date: '.$submitted.$ln;
     $md .= 'infocontact: '.$cleanvals['infocontact'].$ln;
     $md .= 'groupalias: '.$cleanvals['groupalias'].$ln;
+    $md .= 'organized-date: '.$ln;
     $md .= 'imageurl: '.$cleanvals['imageurl'].$ln;
     $md .= 'image:'.$ln;
     $md .= '  main:'.$ln;
@@ -70,9 +71,10 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST') {
     $md .= '  isPrimary: true'.$ln;
     $md .= '- name: '.$cleanvals['contact2name'].$ln;
     $md .= '  contact: '.$cleanvals['contact2email'].$ln;
-    $md .= '  okname: '.$cleanvals['contact1okname'].$ln;
-    $md .= '  okemail: '.$cleanvals['contact1okemail'].$ln;
+    $md .= '  okname: '.$cleanvals['contact2okname'].$ln;
+    $md .= '  okemail: '.$cleanvals['contact2okemail'].$ln;
     $md .= '  isPrimary: false'.$ln;
+    $md .= 'category: '.$ln;
     $md .= 'tags: []'.$ln;
     $md .= '---'.$ln2;
     $md .= $cleanvals['description'].$ln2;
