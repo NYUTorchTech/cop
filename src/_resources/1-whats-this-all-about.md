@@ -1,7 +1,7 @@
 ---
-title: Information for Getting Started
+title: What's this all about?
 subtitle: 
-description: 
+description: Next steps, helpful hints and recommendations
 layout: page
 image:
   thumb: getting-started.jpg
@@ -20,7 +20,7 @@ A Community of Practice (CoP) is an informal network of people who share a commo
 
 * Start talking to people and taking names
 * Email <a href="mailto:cop-group@nyu.edu">cop-group@nyu.edu</a> to see if we know of others that share your interests
-* Check <a href="/resources/cop-101.html">CoP 101</a> for ideas and best practices
+* Check <a href="/resources/2-cop-101.html">CoP 101</a> for ideas and best practices
 
 ### I want to join an existing community
 
@@ -30,7 +30,7 @@ A Community of Practice (CoP) is an informal network of people who share a commo
 ### I want to register a new community
 
 * Complete the registration form
-* Check <a href="/resources/cop-101.html">CoP 101</a> for ideas and best practices
+* Check <a href="/resources/2-cop-101.html">CoP 101</a> for ideas and best practices
 
 ## Helpful Hints to Get You Going...
 
