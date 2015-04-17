@@ -1,28 +1,28 @@
-<!-- modals Grid Section -->
-    <section id="{{ site.data.modals.anchor }}" class="modals bg-light-gray">
+<!-- communities Grid Section -->
+    <section id="{{ site.data.communities.anchor }}" class="communities bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">{{ site.data.modals.heading }}</h2>
-                    <h3 class="section-subheading text-muted">{{ site.data.modals.subheading }}</h3>
+                    <h2 class="section-heading">{{ site.data.communities.heading }}</h2>
+                    <h3 class="section-subheading text-muted">{{ site.data.communities.subheading }}</h3>
                 </div>
             </div>
             <div class="row">
             {% for post in site.posts %}
-                <div class="col-md-4 col-sm-6 modals-item">
-                    <a href="{{ site.baseurl }}{{ post.url }}" class="modals-link">
-                        <div class="modals-hover">
-                            <div class="modals-hover-content">
+                <div class="col-md-4 col-sm-6 communities-item">
+                    <a href="{{ site.baseurl }}{{ post.url }}" class="communities-link">
+                        <div class="communities-hover">
+                            <div class="communities-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        {% assign image = site.data.modals.defaultimage %}
+                        {% assign image = site.data.communities.defaultimage %}
                         {% if post.image.thumb %}
                             {% assign image = post.image.thumb %}
                         {% endif %}
                         {% picture thumb {{ image }} class="img-responsive" alt="{{ post.title }}" %}
                     </a>
-                    <div class="modals-caption">
+                    <div class="communities-caption">
                         <h4>{{ post.title }}</h4>
                         <p class="text-muted">{{ post.subtitle }}</p>
                     </div>
@@ -31,7 +31,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p class="section-subheading text-muted">{{ site.data.modals.subtext }}</p>
+                    <p class="section-subheading text-muted">{{ site.data.communities.subtext }}</p>
                 </div>
             </div>
         </div>
