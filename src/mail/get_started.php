@@ -16,6 +16,7 @@ function clean($string) {
 if( $_SERVER['REQUEST_METHOD'] === 'POST') {
     $ln = PHP_EOL;
     $ln2 = PHP_EOL.PHP_EOL;
+    $tb = '&nbsp;&nbsp;';
 
     $body = 'You have received a new CoP submission.'.$ln2;
 
@@ -24,21 +25,21 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST') {
         //$body .= $name .': '. $cleanvals[$name] .$ln;
     }
 
-/*
-    if($cleanvals['contact1email']) {
-        $sender = $cleanvals['contact1email'];
+    if(empty($cleanvals['contact1email'])) {
+        $sender = 'cop-group@nyu.edu';
     } else {
-        $sender = 'jannae@nyu.edu';
+        $sender = $cleanvals['contact1email'];
     }
-*/
 
-    $sender = 'jannae@nyu.edu';
-
-    $to = 'jannae@nyu.edu';
+    $to = 'cop-group@nyu.edu';
+    // $to = $sender;
     $subj = 'New CoP Submitted for '.$cleanvals['title'];
 
-    $headers = 'From: '. $sender.$ln;
-    $headers .= 'Reply-To: '.$sender;
+    $headers  = '';
+    $headers .= 'MIME-Version: 1.0'.$ln;
+    $headers .= 'Content-type: text/html; charset=iso-8859-1'.$ln;
+    $headers .= 'From: ' . $sender.$ln;
+    $headers .= 'Reply-To: '.$sender.$ln;
 
     date_default_timezone_set('America/New_York');
     $submitted = date('Y-m-d H:i:s');
@@ -54,26 +55,26 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST') {
     $md .= 'organized-date: '.$ln;
     $md .= 'imageurl: '.$cleanvals['imageurl'].$ln;
     $md .= 'image:'.$ln;
-    $md .= '  main:'.$ln;
-    $md .= '  mainalt:'.$ln;
-    $md .= '  thumb:'.$ln;
+    $md .= $tb.'main:'.$ln;
+    $md .= $tb.'mainalt:'.$ln;
+    $md .= $tb.'thumb:'.$ln;
     $md .= 'organized-date: '.$ln;
     $md .= 'members: '.$cleanvals['members'].$ln;
     $md .= 'meeting-style:'.$ln;
-    $md .= '  inperson: '.$cleanvals['mtginperson'].$ln;
-    $md .= '  remote: '.$cleanvals['mtgremote'].$ln;
-    $md .= '  frequency: '.$cleanvals['mtgfrequency'].$ln;
+    $md .= $tb.'inperson: '.$cleanvals['mtginperson'].$ln;
+    $md .= $tb.'remote: '.$cleanvals['mtgremote'].$ln;
+    $md .= $tb.'frequency: '.$cleanvals['mtgfrequency'].$ln;
     $md .= 'organizers:'.$ln;
     $md .= '- name: '.$cleanvals['contact1name'].$ln;
-    $md .= '  contact: '.$cleanvals['contact1email'].$ln;
-    $md .= '  okname: '.$cleanvals['contact1okname'].$ln;
-    $md .= '  okemail: '.$cleanvals['contact1okemail'].$ln;
-    $md .= '  isPrimary: true'.$ln;
+    $md .= $tb.'contact: '.$cleanvals['contact1email'].$ln;
+    $md .= $tb.'okname: '.$cleanvals['contact1okname'].$ln;
+    $md .= $tb.'okemail: '.$cleanvals['contact1okemail'].$ln;
+    $md .= $tb.'isPrimary: true'.$ln;
     $md .= '- name: '.$cleanvals['contact2name'].$ln;
-    $md .= '  contact: '.$cleanvals['contact2email'].$ln;
-    $md .= '  okname: '.$cleanvals['contact2okname'].$ln;
-    $md .= '  okemail: '.$cleanvals['contact2okemail'].$ln;
-    $md .= '  isPrimary: false'.$ln;
+    $md .= $tb.'contact: '.$cleanvals['contact2email'].$ln;
+    $md .= $tb.'okname: '.$cleanvals['contact2okname'].$ln;
+    $md .= $tb.'okemail: '.$cleanvals['contact2okemail'].$ln;
+    $md .= $tb.'isPrimary: false'.$ln;
     $md .= 'category: '.$ln;
     $md .= 'tags: []'.$ln;
     $md .= '---'.$ln2;
@@ -83,7 +84,7 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST') {
     $md .= '##Processes and Practices'.$ln;
     $md .= $cleanvals['process'].$ln2;
 
-    $body .= $ln.$md;
+    $body .= nl2br($md);
 
     $contents  = 'Submitted: ' . $submitted.$ln;
     $contents .= 'To: ' . $to.$ln;
