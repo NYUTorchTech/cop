@@ -20,17 +20,17 @@ A Community of Practice (CoP) is an informal network of people who share a commo
 
 * Start talking to people and taking names
 * Email <a href="mailto:cop-group@nyu.edu">cop-group@nyu.edu</a> to see if we know of others that share your interests
-* Check <a href="/resources/2-cop-101.html">CoP 101</a> for ideas and best practices
+* Check <a href="../resources/2-cop-101.html">CoP 101</a> for ideas and best practices
 
 ### I want to join an existing community
 
-* Read over the <a href="/#join">list of existing communities</a> for one that matches your interests
+* Read over the <a href="../#join">list of existing communities</a> for one that matches your interests
 * Reach out to CoP contact 
 
 ### I want to register a new community
 
 * Complete the registration form
-* Check <a href="/resources/2-cop-101.html">CoP 101</a> for ideas and best practices
+* Check <a href="../resources/2-cop-101.html">CoP 101</a> for ideas and best practices
 
 ## Helpful Hints to Get You Going...
 

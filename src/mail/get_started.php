@@ -1,6 +1,6 @@
 <?php
 // CORS
-header("Access-Control-Allow-Origin: https://nyutorchtech.github.io");
+// header("Access-Control-Allow-Origin: https://nyutorchtech.github.io");
 
 // for debugging
 ini_set('display_errors', 1);

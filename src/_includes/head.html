@@ -1,7 +1,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }} - {% endif %}NYU TorchTech {{ site.title }}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{{ site.description }}">
     {% if site.enforce_ssl %}
@@ -10,9 +10,10 @@
     but: only check when on the production domain, as set in _config.yml.
     -->
     <script type="text/javascript">
-      var enforce = "{{ site.enforce_ssl }}";
-      if ((enforce == window.location.host) && (window.location.protocol != "https:"))
-        window.location = window.location.toString().replace(/^http:/, "https:");
+      var enforce = '{{ site.enforce_ssl }}';
+      console.log(window.location.host);
+      if ((enforce === window.location.host) && (window.location.protocol !== 'https:'))
+        window.location = window.location.toString().replace(/^http:/, 'https:');
     </script>
     {% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

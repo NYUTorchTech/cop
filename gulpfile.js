@@ -40,14 +40,14 @@ gulp.task('jekyll:debug', ['clean:dev', 'clean:prod'], $.shell.task('jekyll serv
 gulp.task('jekyll:prod', ['clean:prod'], $.shell.task('jekyll build --config _config.yml,_config.build.yml'));
 
 // Task to upload your site via Rsync to your server
-gulp.task('rsync', function () {
+gulp.task('rsync', ['publish'], function () {
   // Load in the variables needed for our Rsync synchronization
   var secret = require('./._rsync.json');
 
-  return gulp.src(path.src + '/**')
+  return gulp.src(path.site + '/**')
     .pipe($.rsync({
       // This uploads the contents of 'root', instead of the folder
-      root: path.src + '/mail',
+      root: path.site,
       // Credentials ignored by repository
       hostname: secret.hostname,
       username: secret.username,

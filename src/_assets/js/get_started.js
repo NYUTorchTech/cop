@@ -41,7 +41,7 @@ $(function() {
             var copcontact2okemail = $('input#cop-contact2-okemail').val();
 
             $.ajax({
-                url: 'https://www.nyu.edu/projects/jacks/cop/get_started.php',
+                url: 'mail/get_started.php',
                 type: 'POST',
                 data: {
                     title: copname,
