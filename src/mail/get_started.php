@@ -27,12 +27,12 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if(empty($cleanvals['contact1email'])) {
         $sender = 'cop-group@nyu.edu';
+        $to = 'cop-group@nyu.edu';
     } else {
         $sender = $cleanvals['contact1email'];
+        $to = 'cop-group@nyu.edu,'.$cleanvals['contact1email'];
     }
 
-    $to = 'cop-group@nyu.edu';
-    // $to = $sender;
     $subj = 'New CoP Submitted for '.$cleanvals['title'];
 
     $headers  = '';
