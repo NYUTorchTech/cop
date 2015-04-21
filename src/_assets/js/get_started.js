@@ -23,8 +23,8 @@ $(function() {
             var copmembers = $('select#cop-members').val();
             var copprocess = $('textarea#cop-process').val();
             // meeting style checkboxes
-            var copmtginperson = $('input#cop-mtginperson').val();
-            var copmtgremote = $('input#cop-mtgremote').val();
+            var copmtginperson = ($('input#cop-mtginperson:checked').val() ? true : false );
+            var copmtgremote = ($('input#cop-mtgremote:checked').val() ? true : false );
             // Under the checkboxes
             var copmtgfrequency = $('select#cop-mtgfrequency').val();
             var copinfocontact = $('input#cop-infocontact').val();
@@ -33,12 +33,12 @@ $(function() {
             //Contact Info Section:
             var copcontact1name = $('input#cop-contact1-name').val();
             var copcontact1email = $('input#cop-contact1-email').val();
-            var copcontact1okname = $('input#cop-contact1-okname').val();
-            var copcontact1okemail = $('input#cop-contact1-okemail').val();
+            var copcontact1okname = ($('input#cop-contact1-okname:checked').val() ? true : false );
+            var copcontact1okemail = ($('input#cop-contact1-okemail:checked').val() ? true : false );
             var copcontact2name = $('input#cop-contact2-name').val();
             var copcontact2email = $('input#cop-contact2-email').val();
-            var copcontact2okname = $('input#cop-contact2-okname').val();
-            var copcontact2okemail = $('input#cop-contact2-okemail').val();
+            var copcontact2okname = ($('input#cop-contact2-okname:checked').val() ? true : false );
+            var copcontact2okemail = ($('input#cop-contact2-okemail:checked').val() ? true : false );
 
             $.ajax({
                 url: 'mail/get_started.php',

@@ -14,12 +14,12 @@
                                 <h4>COP Information</h4>
                                 <div class="form-group">
                                     <label for="cop-name" class="control-label">CoP Name: </label>
-                                    <input type="text" class="form-control" placeholder="CoP Name *" id="cop-name" required data-validation-required-message="Please enter the CoP name.">
+                                    <input type="text" class="form-control" placeholder="CoP Name *" id="cop-name" required data-validation-required-message="Please enter the CoP name." />
                                 </div>
                                 <div class="form-group">
                                     <label for="cop-subtext" class="control-label">Short Description: </label>
                                     <p class="help-block text-muted-reverse">Describe your group in 140 characters or less.</p>
-                                    <input type="text" class="form-control" placeholder="Short Description *" id="cop-subtext" required data-validation-required-message="Please enter the CoP Short Description.">
+                                    <input type="text" class="form-control" placeholder="Short Description *" id="cop-subtext" required data-validation-required-message="Please enter the CoP Short Description." />
                                 </div>
                                 <div class="form-group">
                                     <label for="cop-description" class="control-label">Description/Purpose of COP: </label>
@@ -34,7 +34,7 @@
                                 <div class="form-group">
                                     <label for="cop-imageurl" class="control-label">Group "Cover" Image: </label>
                                     <p class="help-block text-muted-reverse">(Optional) If you have an image you would like to use for your group page on this website, plesae add the URL. If not, we will choose one for you.</p>
-                                    <input type="text" class="form-control" placeholder="URL for group page image" id="cop-imageurl">
+                                    <input type="text" class="form-control" placeholder="URL for group page image" id="cop-imageurl" />
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -57,10 +57,10 @@
                                     <label class="control-label">How will meetings be conducted?</label>
                                     <div class="form-group" id="cop-meetingstyle">
                                         <label class="checkbox-inline">
-                                          <input type="checkbox" id="cop-mtginperson" value="true"> In Person
+                                          <input type="checkbox" id="cop-mtginperson" value="true" /> In Person
                                         </label>
                                         <label class="checkbox-inline">
-                                          <input type="checkbox" id="cop-mtgremote" value="true"> Virtual/Call
+                                          <input type="checkbox" id="cop-mtgremote" value="true" /> Virtual/Call
                                         </label>
                                     </div>
                                 </div>
@@ -78,12 +78,12 @@
                                 <div class="form-group">
                                     <label for="cop-infocontact" class="control-label">Contact Email for People Interested in the group.: </label>
                                     <p class="help-block text-muted-reverse">This email will be added to the group page as a contact for anyone interested in inquiring about your group.</p>
-                                    <input type="text" class="form-control" placeholder="Group Information Contact Email" id="cop-infocontact" required data-validation-required-message="Please enter the Group Contact Information.">
+                                    <input type="text" class="form-control" placeholder="Group Information Contact Email" id="cop-infocontact" required data-validation-required-message="Please enter the Group Contact Information." />
                                 </div>
                                 <div class="form-group">
                                     <label for="cop-groupalias" class="control-label">Google Group or Email Alias for Group: </label>
                                     <p class="help-block text-muted-reverse">This email will NOT be displayed, and is captured only for the Committee's record keeping.</p>
-                                    <input type="text" class="form-control" placeholder="Google Group or Email Alias" id="cop-groupalias" required data-validation-required-message="Please enter the Group Contact Information.">
+                                    <input type="text" class="form-control" placeholder="Google Group or Email Alias" id="cop-groupalias" required data-validation-required-message="Please enter the Group Contact Information." />
                                 </div>
                             </div>
                         </div>
@@ -97,23 +97,21 @@
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <input type="text" class="form-control" placeholder="Name" id="cop-contact1-name" required data-validation-required-message="Please enter the primary contact name for the CoP.">
+                                <input type="text" class="form-control" placeholder="Name" id="cop-contact1-name" required data-validation-required-message="Please enter the primary contact name for the CoP." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="col-md-4">
-                                <input type="email" class="form-control" placeholder="Email" id="cop-contact1-email" required data-validation-required-message="Please enter the primary contact email for the CoP.">
+                                <input type="email" class="form-control" placeholder="Email" id="cop-contact1-email" required data-validation-required-message="Please enter the primary contact email for the CoP." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="form-group" id="cop-contact1-ok">
-                                        <label class="checkbox-inline">
-                                          <input type="checkbox" id="cop-contact1-okname" value="true"> Name?
-                                        </label>
-                                        <label class="checkbox-inline">
-                                          <input type="checkbox" id="cop-contact1-okemail" value="true"> Email?
-                                        </label>
-                                    </div>
+                                <div class="form-group" id="cop-contact1-ok">
+                                    <label class="checkbox-inline">
+                                      <input type="checkbox" name="cop-contact1-ok" id="cop-contact1-okname" /> Name?
+                                    </label>
+                                    <label class="checkbox-inline">
+                                      <input type="checkbox" name="cop-contact1-ok" id="cop-contact1-okemail" /> Email?
+                                    </label>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +122,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <input type="text" class="form-control" placeholder="Name" id="cop-contact2-name" required data-validation-required-message="Please enter the primary contact name for the CoP.">
+                                <input type="text" class="form-control" placeholder="Name" id="cop-contact2-name" required data-validation-required-message="Please enter the primary contact name for the CoP." />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="col-md-4">
@@ -132,15 +130,13 @@
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="form-group" id="cop-contact2-ok">
-                                        <label class="checkbox-inline">
-                                          <input type="checkbox" id="cop-contact2-okname" value="true"> Name?
-                                        </label>
-                                        <label class="checkbox-inline">
-                                          <input type="checkbox" id="cop-contact2-okemail" value="true"> Email?
-                                        </label>
-                                    </div>
+                                <div class="form-group" id="cop-contact2-ok">
+                                    <label class="checkbox-inline">
+                                      <input type="checkbox" name="cop-contact2-ok" id="cop-contact2-okname" /> Name?
+                                    </label>
+                                    <label class="checkbox-inline">
+                                      <input type="checkbox" name="cop-contact2-ok" id="cop-contact2-okemail" /> Email?
+                                    </label>
                                 </div>
                             </div>
                         </div>

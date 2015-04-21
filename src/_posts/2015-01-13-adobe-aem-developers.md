@@ -15,7 +15,7 @@ organized-date:
 members: 11-20
 meeting-style:
   inperson: true
-  remote: true
+  remote: false
   frequency: Monthly
 organizers:
 - name: Jannae Jacks
