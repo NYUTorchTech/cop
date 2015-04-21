@@ -29,7 +29,7 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST') {
         $sender = 'cop-group@nyu.edu';
         $to = 'cop-group@nyu.edu';
     } else {
-        $sender = $cleanvals['contact1email'];
+        $sender = 'cop-group@nyu.edu';
         $to = 'cop-group@nyu.edu,'.$cleanvals['contact1email'];
     }
 
@@ -97,12 +97,12 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST') {
     // For debugging when I don't have mail() (local)
     // $defaultfile = 'subs/new.txt';
 
-    // if(!empty($cleanvals['name'])) {
-    //     $file = 'subs/' . clean($cleanvals['name']) . '.txt';
-    // } else {
+    // if(empty($cleanvals['name'])) {
     //     $file = $defaultfile;
+    // } else {
+    //     $file = 'subs/' . clean($cleanvals['name']) . '.txt';
     // }
     // file_put_contents($file, $contents, FILE_APPEND | LOCK_EX);
 
-    return true;
+    // return true;
 }
