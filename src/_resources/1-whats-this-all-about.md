@@ -12,7 +12,7 @@ category: resources
 
 ## What's a "Community of Practice"?
 
-A Community of Practice (CoP) is an informal network of people who share a common interest. It can include as few as five people, and diversity is encouraged - i.e., membership should consist of individuals from across different units from the University. A CoP has has a targeted scope and provides learning value to its members with no predefined lifetime for communities of practice.
+A Community of Practice (CoP) is an informal network of people who share a common interest. It can include as few as five people, and diversity is encouraged - i.e., membership should consist of individuals from across different units from the University. A CoP has a targeted scope and provides learning value to its members with no predefined lifetime for communities of practice.
 
 ## How Do I Get Started?
 
