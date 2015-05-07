@@ -20,7 +20,7 @@
                         {% if post.image.thumb %}
                             {% assign image = post.image.thumb %}
                         {% endif %}
-                        {% picture thumb {{ image }} class="img-responsive" alt="{{ post.title }}" %}
+                        {% picture thumb {{ image }} class="img-responsive img-centered" alt="{{ post.title }}" %}
                     </a>
                     <div class="communities-caption">
                         <h4>{{ post.title }}</h4>

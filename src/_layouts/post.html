@@ -7,18 +7,18 @@ layout: default
         <div class="row">
             <div class="col-lg-8">
                 <h1>{{ page.title }}</h1>
-                <hr class="star-primary" />
             </div>
 
         </div>
         <div class="row">
             <div class="col-lg-8">
+                <hr class="star-primary" />
                 {{ content }}
             </div>
             <div class="col-lg-4">
                 {% if page.image.main %}
-                <div class="panel panel-default">
-                    {% picture sidebar {{ page.image.main }} class="img-responsive img-thumbnail img-centered" %}
+                <div class="panel panel-default text-center">
+                    {% picture thumb {{ page.image.main }} class="img-responsive img-centered" %}
                 </div>
                 {% endif %}
                 {% if page.contactinfo %}
@@ -49,6 +49,7 @@ layout: default
                         {% if organizer.okname %}<li>{% if organizer.okemail %}<a href="mailto:{{ organizer.contact }}"><i class="fa fa-envelope"></i></a>  {% endif %}<strong>{{ organizer.name }}</strong> {% if organizer.isPrimary %}*{% endif %}</li>{% endif %}
                     </ul>
                     {% endfor %}
+                    <p class="small muted">* primary contact</p>
                     </div>
                 </div>
                 {% if page.tags.size > 0 %}
