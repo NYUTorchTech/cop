@@ -46,7 +46,7 @@ layout: default
                     <div class="panel-body">
                     {% for organizer in page.organizers %}
                     <ul class="list-unstyled item-details">
-                        {% if organizer.okname %}<li>{% if organizer.okemail %}<a href="mailto:{{ organizer.email }}"><i class="fa fa-envelope"></i></a>  {% endif %}<strong>{{ organizer.name }}</strong> {% if organizer.isPrimary %}*{% endif %}</li>{% endif %}
+                        {% if organizer.okname %}<li>{% if organizer.okemail %}<a href="mailto:{{ organizer.contact }}"><i class="fa fa-envelope"></i></a>  {% endif %}<strong>{{ organizer.name }}</strong> {% if organizer.isPrimary %}*{% endif %}</li>{% endif %}
                     </ul>
                     {% endfor %}
                     </div>
