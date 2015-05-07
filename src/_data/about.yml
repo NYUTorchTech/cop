@@ -21,7 +21,7 @@ members:
         url: "https://twitter.com/CBarrows"
       - title: linkedin
         url: "https://www.linkedin.com/in/cbarrows"
-      - title: external-link-square
+      - title: link
         url: "http://www.chrisgbarrows.com"
   - name: Kevin McCullough
     image:
@@ -37,8 +37,8 @@ members:
         url: "mailto:jannae@nyu.edu"
       - title: github
         url: https://github.com/jannae
-      - title: external-link-square
-        url: "http://jann.ae"
+      - title: linkedin
+        url: "https://www.linkedin.com/in/jannaejacks"
   - name: Razi Ahmad
     image:
     role: Google Groups Technical Lead
