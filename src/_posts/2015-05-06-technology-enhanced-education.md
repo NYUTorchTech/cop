@@ -3,7 +3,7 @@ title: Technology Enhanced Education
 subtitle: Focus on facilitating, creating, using, and managing technology enhanced models in higher education.
 layout: post
 date: 2015-05-06 12:48:07
-infocontact: 
+infocontact: ilana.levinson@nyu.edu
 groupalias: 
 organized-date: 
 imageurl: https://drive.google.com/open?id=0B78fm4D7Rr25eEE0SklPZ205TjA&authuser=0
