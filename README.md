@@ -59,5 +59,4 @@ Default task: Builds and serves the project locally. Watches for file updates.
 
     cp rsync.json.example ._rsync.json
 
-Edit the new `._rsync.json` file to include the necessary information for an rsync deploy.
-**DO NOT COMMIT THIS FILE**
+Edit the new `._rsync.json` file to include the necessary information for an rsync deploy. **DO NOT COMMIT THE `._rsync.json` FILE**

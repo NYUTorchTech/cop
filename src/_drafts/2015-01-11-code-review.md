@@ -7,9 +7,9 @@ infocontact:
 groupalias: 
 organized-date: April 2011
 image:
-  main: code-review.jpg
-  mainalt: Code Review
-  thumb: code-review.jpg
+  main: 
+  mainalt: 
+  thumb: 
 members: 10-20
 meeting-style:
   inperson: true
