@@ -2,8 +2,8 @@
 # Overrides these options in _config.yml
 
 # Overrides the default URL, needed for your atom feed and sitemap
-url: https://torchtech.law.nyu.edu/
-enforce_ssl: torchtech.law.nyu.edu
+url: https://torchtech.nyu.edu/
+enforce_ssl: torchtech.nyu.edu
 baseurl: /cop
 
 # Hides your drafts and future posts

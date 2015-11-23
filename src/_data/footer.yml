@@ -5,8 +5,8 @@ social:
     url: 'mailto:cop-group@nyu.edu'
   - title: github
     url: 'https://github.com/NYUTorchTech/cop'
-# links:
-#   - title: 'Footer Link 1'
-#     url: '#'
-#   - title: 'Footer Link 2'
-#     url: '#'
+links:
+  - title: 'NYU Torchtech'
+    url: 'https://torchtech.nyu.edu'
+  - title: 'NYU IT'
+    url: 'http://nyu.edu/it'
