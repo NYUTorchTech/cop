@@ -1,4 +1,6 @@
 source "http://rubygems.org"
+#ruby=2.2.3
+#ruby-gemset=cop
 
 gem 'jekyll'
 gem 'mini_magick'

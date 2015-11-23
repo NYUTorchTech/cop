@@ -1,21 +1,26 @@
 {
   "name": "nyucop",
   "private": true,
-  "version": "0.0.0",
-  "description": "Yeoman workflow for NYU Communities of Practice Site",
-  "dependencies": {},
+  "version": "1.0.0",
+  "description": "NYU Torchtech Communities of Practice Jekyll site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NYUTorchTech/cop.git"
+  },
+  "author": "jannae jacks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NYUTorchTech/cop/issues"
+  },
+  "homepage": "https://github.com/NYUTorchTech/cop#readme",
   "devDependencies": {
-    "browser-sync": "^1.5.7",
-    "del": "^1.1.1",
-    "gulp": "^3.8.8",
-    "gulp-connect-php": "0.0.3",
-    "gulp-gh-pages": "^0.5.0",
-    "gulp-load-plugins": "^0.8.0",
+    "browser-sync": "^2.10.0",
+    "del": "^2.1.0",
+    "gulp": "^3.9.0",
+    "gulp-connect-php": "0.0.7",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-load-plugins": "^1.1.0",
     "gulp-rsync": "0.0.5",
-    "gulp-shell": "^0.2.9"
-  },
-  "engines": {
-    "node": ">0.10.0"
-  },
-  "scripts": {}
+    "gulp-shell": "^0.5.1"
+  }
 }
