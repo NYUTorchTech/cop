@@ -8,7 +8,6 @@ layout: default
             <div class="col-lg-8">
                 <h1>{{ page.title }}</h1>
             </div>
-
         </div>
         <div class="row">
             <div class="col-lg-8">
@@ -39,19 +38,35 @@ layout: default
                     {% endif %}
                     </div>
                 </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Community Organizers</h3>
-                    </div>
-                    <div class="panel-body">
+                {% if page.organizers.size > 0 %}
                     {% for organizer in page.organizers %}
-                    <ul class="list-unstyled item-details">
-                        {% if organizer.okname %}<li>{% if organizer.okemail %}<a href="mailto:{{ organizer.contact }}"><i class="fa fa-envelope"></i></a>  {% endif %}<strong>{{ organizer.name }}</strong> {% if organizer.isPrimary %}*{% endif %}</li>{% endif %}
-                    </ul>
+                        {% if organizer.okname or organizer.okemail %}
+                            {% assign can_we_display = "yes" %}
+                        {% endif %}
                     {% endfor %}
-                    <p class="small muted">* primary contact</p>
+                    {% if can_we_display == "yes" %}
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Community Organizers</h3>
+                        </div>
+                        <div class="panel-body">
+                        {% for organizer in page.organizers %}
+                        <ul class="list-unstyled item-details">
+                        {% if organizer.okname or organizer.okemail %}
+                            {% if organizer.okname == false %}
+                                {% assign contact_display = organizer.contact %}
+                            {% else %}
+                                {% assign contact_display = organizer.name %}
+                            {% endif %}
+                            <li>{% if organizer.okemail %}<a href="mailto:{{ organizer.contact }}"><i class="fa fa-envelope"></i> {% endif %}<strong>{{ contact_display }}</strong> {% if organizer.isPrimary %}*{% endif %}{% if organizer.okemail %}</a>{% endif %}</li>
+                        {% endif %}
+                        </ul>
+                        {% endfor %}
+                        <p class="small muted">* primary contact</p>
+                        </div>
                     </div>
-                </div>
+                    {% endif %}
+                {% endif %}
                 {% if page.tags.size > 0 %}
                 <div class="panel panel-default">
                     <div class="panel-heading">
