@@ -14,13 +14,13 @@
   },
   "homepage": "https://github.com/NYUTorchTech/cop#readme",
   "devDependencies": {
-    "browser-sync": "^2.10.0",
-    "del": "^2.1.0",
+    "browser-sync": "^2.11.1",
+    "del": "^2.2.0",
     "gulp": "^3.9.0",
     "gulp-connect-php": "0.0.7",
     "gulp-gh-pages": "^0.5.4",
-    "gulp-load-plugins": "^1.1.0",
+    "gulp-load-plugins": "^1.2.0",
     "gulp-rsync": "0.0.5",
-    "gulp-shell": "^0.5.1"
+    "gulp-shell": "^0.5.2"
   }
 }

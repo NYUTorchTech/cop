@@ -37,6 +37,7 @@ limit_posts: 10
 
 
 # Build settings
+highlighter: true
 markdown: kramdown
 permalink: /:title
 
