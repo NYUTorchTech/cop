@@ -8,8 +8,8 @@ groupalias: Social.media@nyu.edu
 organized-date:
 imageurl:
 image:
-  thumb: social-ambassadors-twitter-event.jpg
-  main: social-ambassadors-twitter-event.jpg
+  thumb: socambassadors-event.jpg
+  main: socambassadors-event.jpg
   mainalt: Social Media Ambassadors
 organized-date:
 members: 50+
