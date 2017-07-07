@@ -10,19 +10,6 @@ members:
     social:
       - title: envelope
         url: "mailto:nelya.zonis@nyu.edu"
-  - name: Chris Barrows
-    image: chris-barrows.jpg
-    role: Lead Marketer
-    gravatar: cb170@nyu.edu
-    social:
-      - title: envelope
-        url: "mailto:cb170@nyu.edu"
-      - title: twitter
-        url: "https://twitter.com/CBarrows"
-      - title: linkedin
-        url: "https://www.linkedin.com/in/cbarrows"
-      - title: link
-        url: "http://www.chrisgbarrows.com"
   - name: Kevin McCullough
     image:
     role: Community Intake
