@@ -18,8 +18,8 @@ meeting-style:
   remote: false
   frequency: Monthly
 organizers:
-- name: Jannae Jacks
-  contact: jannae@nyu.edu
+- name: Jim Robertson
+  contact: cms.dev@nyu.edu
   okname: true
   okemail: true
   isPrimary: true
