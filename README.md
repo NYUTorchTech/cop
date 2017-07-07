@@ -5,9 +5,14 @@ The repository and current home for the NYU Communities of Practice website.
 ## Contributing / Development
 
 Dependencies:
-* Ruby v2.2.0
-* Node.js v0.12.0
-* NPM v2.7.1
+* Ruby v2.2.3
+* Node.js / NPM
+* Bower
+
+To satisfy the ruby dependency, I recommend using <https://rvm.io/>:
+
+    rvm install ruby-2.2.3
+    gem install bundler
 
 To get started, clone this repository's `master` branch
 
