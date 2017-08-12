@@ -6,12 +6,10 @@ sidebar:
   - sectiontitle: "NYU Resources"
     sectionlinks:
       - title: 'Wikis'
-        url: 'https://www.nyu.edu/its/wiki/'
-      - title: 'Blogs'
-        url: 'https://www.nyu.edu/its/blogs/'
+        url: 'http://www.nyu.edu/life/information-technology/websites-storage-and-sharing/nyu-wikis.html'
+      - title: 'Web Publishing'
+        url: 'https://wp.nyu.edu'
       - title: 'Torch Tech'
-        url: 'http://torchtech.law.nyu.edu/'
-      - title: 'NYU Meetups'
-        url: 'http://nyu.meetup.com/'
+        url: 'https://wp.nyu.edu/torchtech/'
       - title: 'IT Connect'
         url: 'https://wp.nyu.edu/connect/'
