@@ -3,7 +3,7 @@ title: NYU Software Development Group
 subtitle: Unite and enrich the NYU community of software developers. 
 layout: post
 date: 2015-08-12 14:01:15
-infocontact: kevin.ouyang@nyu.edu
+infocontact: hannan@nyu.edu
 groupalias: 
 organized-date: 
 imageurl: 
@@ -18,16 +18,11 @@ meeting-style:
   remote: true
   frequency: Monthly
 organizers:
-- name: Kevin Ouyang
-  contact: kevin.ouyang@nyu.edu
-  okname: true
-  okemail: true
-  isPrimary: true
 - name: Hannan Butt
   contact: hannan@nyu.edu
   okname: true
   okemail: true
-  isPrimary: false
+  isPrimary: true
 category: 
 tags: []
 ---
