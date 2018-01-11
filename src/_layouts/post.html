@@ -21,7 +21,12 @@ layout: default
                 </div>
                 {% endif %}
                 {% if page.infocontact %}
-                    <p><a href="mailto:{{ page.infocontact }}" class="btn btn-primary btn-lg btn-block" role="button"><i class="fa fa-envelope"></i> Contact</a></p>
+                    {% if page.infocontact contains '@' %}
+                        {% capture infocontact %}mailto:{{ page.infocontact }}{% endcapture %}
+                    {% else %}
+                        {% assign infocontact = page.infocontact %}
+                    {% endif %}
+                    <p><a href="{{ infocontact }}" class="btn btn-primary btn-lg btn-block" role="button"><i class="fa fa-envelope"></i> Contact</a></p>
                 {% endif %}
                 <div class="panel panel-default">
                     <div class="panel-heading">
