@@ -3,7 +3,7 @@ title: Video Technology Practitioners
 subtitle: A knowledge sharing group based on the technology used for video acquisition, post-production & presentation 
 layout: post
 date: 2016-02-29 11:38:48
-infocontact: ryan.dismukes@nyu.edu
+infocontact: cop-group@nyu.edu
 groupalias: 
 organized-date: 
 imageurl: 
@@ -18,11 +18,11 @@ meeting-style:
   remote: true
   frequency: Every Other Month
 organizers:
-- name: Ryan Dismukes
-  contact: ryan.dismukes@nyu.edu
-  okname: true
-  okemail: true
-  isPrimary: true
+- name: 
+  contact: 
+  okname: false
+  okemail: false
+  isPrimary: false
 - name: 
   contact: 
   okname: false
