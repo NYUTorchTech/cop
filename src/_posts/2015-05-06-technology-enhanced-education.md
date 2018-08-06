@@ -18,8 +18,8 @@ meeting-style:
   remote: true
   frequency: Monthly
 organizers:
-- name: Ilana Levinson
-  contact: ilana.levinson@nyu.edu
+- name: Lillian Moran
+  contact: lillian.moran@nyu.edu
   okname: true
   okemail: true
   isPrimary: true
