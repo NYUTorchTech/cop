@@ -56,4 +56,4 @@ The TEE CoP will exist alongside the ITC and aims to provide a venue to come tog
 
 
 ##Processes and Practices
-Please read the [TEE CoP charter](https://docs.google.com/document/d/1D3Kc679iKlFrm4ln-FbSWAx9g3Sbj3OmFdvnJ0Xy37Y/edit).
+Please read the [TEE CoP charter](https://docs.google.com/document/d/1H51s3q8DChk1BdI6T98F_W5-2nz5G3-JH8AKr_yjrno/edit).
