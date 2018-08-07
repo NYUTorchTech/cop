@@ -3,7 +3,7 @@ title: Technology Enhanced Education
 subtitle: Focus on facilitating, creating, using, and managing technology enhanced models in higher education.
 layout: post
 date: 2015-05-06 12:48:07
-infocontact: ilana.levinson@nyu.edu
+infocontact: tee_cop@nyu.edu
 groupalias: 
 organized-date: 
 imageurl: https://drive.google.com/open?id=0B78fm4D7Rr25eEE0SklPZ205TjA&authuser=0
@@ -19,12 +19,14 @@ meeting-style:
   frequency: Monthly
 organizers:
 - name: Lillian Moran
-  contact: lillian.moran@nyu.edu
+  detail: College of Dentistry
+  contact: lm104@nyu.edu
   okname: true
   okemail: true
   isPrimary: true
-- name: Francesca Socolick
-  contact: francesca.socolick@nyu.edu
+- name: Chris Zakrzewski
+  detail: School of Professional Studies
+  contact: cez2@nyu.edu
   okname: true
   okemail: true
   isPrimary: false
@@ -42,11 +44,16 @@ This community is for anyone interested in:
 * Educational Policy and Leadership
 * Mobile Learning
 * Technology Infrastructure
+* Innovative Pedagogies
+* Faculty Support
 
 ...and the many other technology enhanced efforts occurring at NYU.
 
 ##Planned Goal/Outcome
-Increase awareness of the eclectic technology enhanced projects and initiatives while also identifying common practices, efforts, and resources between schools and departments across NYU.  How can instructional designers and technologists crowd source resources and ideas to achieve both their organizational and personal goals?
+The TEE CoP is open to, and welcomes, all full-time instructional/educational designers and technologists from across NYU’s schools and global sites. As outlined in the [Instructional Technology Committee (ITC) charter](https://docs.google.com/document/d/1D3Kc679iKlFrm4ln-FbSWAx9g3Sbj3OmFdvnJ0Xy37Y/edit), the role of an instructional technologist at NYU is to engage and collaborate with faculty around pedagogy, design and technology. Over the past several years, the work of this Committee has been instrumental in establishing and bringing together NYU’s instructional technologists et. al on a consistent basis to discuss and surface important topics, current and future use-cases, to the standing Teaching and Learning Governance and Advisory groups. 
+
+The TEE CoP will exist alongside the ITC and aims to provide a venue to come together to discuss member chosen topics in further detail, share, advance our knowledge as a community and support each other in our day-to-day work around key areas of our work. 
+
 
 ##Processes and Practices
-Monthly meetings per semester to share current projects, initiatives, successes and hurdles.
+Please read the [TEE CoP charter](https://docs.google.com/document/d/1D3Kc679iKlFrm4ln-FbSWAx9g3Sbj3OmFdvnJ0Xy37Y/edit).

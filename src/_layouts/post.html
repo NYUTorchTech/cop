@@ -63,7 +63,7 @@ layout: default
                             {% else %}
                                 {% assign contact_display = organizer.name %}
                             {% endif %}
-                            <li>{% if organizer.okemail %}<a href="mailto:{{ organizer.contact }}"><i class="fa fa-envelope"></i> {% endif %}<strong>{{ contact_display }}</strong> {% if organizer.isPrimary %}*{% endif %}{% if organizer.okemail %}</a>{% endif %}</li>
+                            <li>{% if organizer.okemail %}<a href="mailto:{{ organizer.contact }}"><i class="fa fa-envelope"></i> {% endif %}<strong>{{ contact_display }}</strong>{% if organizer.okemail %}</a>{% endif %}{% if organizer.detail %}, {{ organizer.detail }}{% endif %} {% if organizer.isPrimary %}*{% endif %}</li>
                         {% endif %}
                         </ul>
                         {% endfor %}
